@@ -60,7 +60,7 @@ gulp.task('browser-sync', function() {
 
 /* ========= ТАСК "PUG" ========== */
 gulp.task('pug', function () {
-	return gulp.src(app + '*.pug') //Выберем файлы по нужному пути
+	return gulp.src(app + 'templates/*.pug') //Выберем файлы по нужному пути
 		.pipe(plumber(err)) // Отслеживаем ошибки
 		.pipe(pug({ // Сконвертим в HTML
 			pretty: '\t' // Форматируем с табами вместо пробелов

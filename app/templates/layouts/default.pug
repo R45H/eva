@@ -1,0 +1,14 @@
+doctype html
+block vars
+html(lang="ru")
+	head
+		include ../partials/head
+		title #{page.title} | EVA
+	body
+		block header
+
+		.wrapper
+			main.main
+				block content
+
+			block footer

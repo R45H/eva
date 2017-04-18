@@ -1,0 +1,16 @@
+extends layouts/default
+
+block vars
+	-
+		page = {
+			title: 'Главная'
+		}
+
+block header
+	include partials/header
+
+block content
+	include pages/index
+
+block footer
+	include partials/footer
