@@ -1,3 +1,4 @@
+/* FontAwesome */
 @font-face {
 	font-family: 'fontawesome';
 	src: url($path + 'fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
@@ -9,7 +10,9 @@
 	font-weight: normal;
 	font-style: normal;
 }
+/* ========== */
 
+/* Bootstrap */
 @font-face {
 	font-family: 'Glyphicons Halflings';
 	src: url($path + 'fonts/bootstrap/glyphicons-halflings-regular.eot');
@@ -19,3 +22,180 @@
 	url($path + 'fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'),
 	url($path + 'fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+/* ========== */
+
+/* ProximaNova */
+@font-face {
+	font-family: 'ProximaNova';
+	src: url($path + 'fonts/Light/ProximaNova-Light.eot');
+	src: url($path + 'fonts/Light/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/Light/ProximaNova-Light.woff2') format('woff2'),
+	url($path + 'fonts/Light/ProximaNova-Light.woff') format('woff'),
+	url($path + 'fonts/Light/ProximaNova-Light.ttf') format('truetype'),
+	url($path + 'fonts/Light/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url($path + 'fonts/LightItalic/ProximaNova-LightIt.eot');
+	src: url($path + 'fonts/LightItalic/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/LightItalic/ProximaNova-LightIt.woff2') format('woff2'),
+	url($path + 'fonts/LightItalic/ProximaNova-LightIt.woff') format('woff'),
+	url($path + 'fonts/LightItalic/ProximaNova-LightIt.ttf') format('truetype'),
+	url($path + 'fonts/LightItalic/ProximaNova-LightIt.svg#ProximaNova-LightIt') format('svg');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url($path + 'fonts/Bold/ProximaNova-Bold.eot');
+	src: url($path + 'fonts/Bold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/Bold/ProximaNova-Bold.woff2') format('woff2'),
+	url($path + 'fonts/Bold/ProximaNova-Bold.woff') format('woff'),
+	url($path + 'fonts/Bold/ProximaNova-Bold.ttf') format('truetype'),
+	url($path + 'fonts/Bold/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url($path + 'fonts/BoldItalic/ProximaNova-BoldIt.eot');
+	src: url($path + 'fonts/BoldItalic/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/BoldItalic/ProximaNova-BoldIt.woff2') format('woff2'),
+	url($path + 'fonts/BoldItalic/ProximaNova-BoldIt.woff') format('woff'),
+	url($path + 'fonts/BoldItalic/ProximaNova-BoldIt.ttf') format('truetype'),
+	url($path + 'fonts/BoldItalic/ProximaNova-BoldIt.svg#ProximaNova-BoldIt') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+/* ========== */
+
+/* ProximaNovaCond */
+@font-face {
+	font-family: 'ProximaNovaCond';
+	src: url($path + 'fonts/Regular/ProximaNovaExCn-Regular.eot');
+	src: url($path + 'fonts/Regular/ProximaNovaExCn-Regular.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/Regular/ProximaNovaExCn-Regular.woff2') format('woff2'),
+	url($path + 'fonts/Regular/ProximaNovaExCn-Regular.woff') format('woff'),
+	url($path + 'fonts/Regular/ProximaNovaExCn-Regular.ttf') format('truetype'),
+	url($path + 'fonts/Regular/ProximaNovaExCn-Regular.svg#ProximaNovaExCn-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaCond';
+	src: url($path + 'fonts/RegularItalic/ProximaNovaExCn-RegularIt.eot');
+	src: url($path + 'fonts/RegularItalic/ProximaNovaExCn-RegularIt.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/RegularItalic/ProximaNovaExCn-RegularIt.woff2') format('woff2'),
+	url($path + 'fonts/RegularItalic/ProximaNovaExCn-RegularIt.woff') format('woff'),
+	url($path + 'fonts/RegularItalic/ProximaNovaExCn-RegularIt.ttf') format('truetype'),
+	url($path + 'fonts/RegularItalic/ProximaNovaExCn-RegularIt.svg#ProximaNovaExCn-RegularIt') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ProximaNovaCond';
+	src: url($path + 'fonts/Light/ProximaNovaExCn-Light.eot');
+	src: url($path + 'fonts/Light/ProximaNovaExCn-Light.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/Light/ProximaNovaExCn-Light.woff2') format('woff2'),
+	url($path + 'fonts/Light/ProximaNovaExCn-Light.woff') format('woff'),
+	url($path + 'fonts/Light/ProximaNovaExCn-Light.ttf') format('truetype'),
+	url($path + 'fonts/Light/ProximaNovaExCn-Light.svg#ProximaNovaExCn-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaCond';
+	src: url($path + 'fonts/LightItalic/ProximaNovaExCn-LightIt.eot');
+	src: url($path + 'fonts/LightItalic/ProximaNovaExCn-LightIt.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/LightItalic/ProximaNovaExCn-LightIt.woff2') format('woff2'),
+	url($path + 'fonts/LightItalic/ProximaNovaExCn-LightIt.woff') format('woff'),
+	url($path + 'fonts/LightItalic/ProximaNovaExCn-LightIt.ttf') format('truetype'),
+	url($path + 'fonts/LightItalic/ProximaNovaExCn-LightIt.svg#ProximaNovaExCn-LightIt') format('svg');
+	font-weight: 300;
+	font-style: italic;
+}
+/* ========== */
+
+/* HelveticaNeueCyr */
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url($path + 'fonts/Roman/HelveticaNeueCyr-Roman.eot');
+	src: url($path + 'fonts/Roman/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+	url($path + 'fonts/Roman/HelveticaNeueCyr-Roman.woff') format('woff'),
+	url($path + 'fonts/Roman/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+	url($path + 'fonts/Roman/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg'),
+	url($path + 'fonts/Roman/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url($path + 'fonts/Italic/HelveticaNeueCyr-Italic.eot');
+	src: url($path + 'fonts/Italic/HelveticaNeueCyr-Italic.woff2') format('woff2'),
+	url($path + 'fonts/Italic/HelveticaNeueCyr-Italic.woff') format('woff'),
+	url($path + 'fonts/Italic/HelveticaNeueCyr-Italic.ttf') format('truetype'),
+	url($path + 'fonts/Italic/HelveticaNeueCyr-Italic.svg#HelveticaNeueCyr-Italic') format('svg'),
+	url($path + 'fonts/Italic/HelveticaNeueCyr-Italic.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url($path + 'fonts/Light/HelveticaNeueCyr-Light.eot');
+	src: url($path + 'fonts/Light/HelveticaNeueCyr-Light.woff2') format('woff2'),
+	url($path + 'fonts/Light/HelveticaNeueCyr-Light.woff') format('woff'),
+	url($path + 'fonts/Light/HelveticaNeueCyr-Light.ttf') format('truetype'),
+	url($path + 'fonts/Light/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light') format('svg'),
+	url($path + 'fonts/Light/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url($path + 'fonts/LightItalic/HelveticaNeueCyr-LightItalic.eot');
+	src: url($path + 'fonts/LightItalic/HelveticaNeueCyr-LightItalic.woff2') format('woff2'),
+	url($path + 'fonts/LightItalic/HelveticaNeueCyr-LightItalic.woff') format('woff'),
+	url($path + 'fonts/LightItalic/HelveticaNeueCyr-LightItalic.ttf') format('truetype'),
+	url($path + 'fonts/LightItalic/HelveticaNeueCyr-LightItalic.svg#HelveticaNeueCyr-LightItalic') format('svg'),
+	url($path + 'fonts/LightItalic/HelveticaNeueCyr-LightItalic.eot?#iefix') format('embedded-opentype');
+	font-weight: 300;
+	font-style: italic;
+}
+/* ========== */
+
+/* PlayfairDisplaySC */
+@font-face {
+	font-family: 'PlayfairDisplaySC';
+	src: url($path + 'fonts/Regular/PlayfairDisplaySC-Regular.eot');
+	src: url($path + 'fonts/Regular/PlayfairDisplaySC-Regular.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/Regular/PlayfairDisplaySC-Regular.woff2') format('woff2'),
+	url($path + 'fonts/Regular/PlayfairDisplaySC-Regular.woff') format('woff'),
+	url($path + 'fonts/Regular/PlayfairDisplaySC-Regular.ttf') format('truetype'),
+	url($path + 'fonts/Regular/PlayfairDisplaySC-Regular.svg#PlayfairDisplaySC-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplaySC';
+	src: url($path + 'fonts/Italic/PlayfairDisplaySC-Italic.eot');
+	src: url($path + 'fonts/Italic/PlayfairDisplaySC-Italic.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/Italic/PlayfairDisplaySC-Italic.woff2') format('woff2'),
+	url($path + 'fonts/Italic/PlayfairDisplaySC-Italic.woff') format('woff'),
+	url($path + 'fonts/Italic/PlayfairDisplaySC-Italic.ttf') format('truetype'),
+	url($path + 'fonts/Italic/PlayfairDisplaySC-Italic.svg#PlayfairDisplaySC-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+/* ========== */
