@@ -4,11 +4,15 @@
 
 	&__item {
 		vertical-align: middle;
-		margin-right: 2em;
+		margin-right: 1em;
 		display: none;
 
 		@include screen-xs() {
 			display: inline-block;
+		}
+
+		@include screen-sm() {
+			margin-right: 1.7em;
 		}
 
 		&:last-child {
@@ -50,6 +54,6 @@
 		color: $color-main;
 		text-transform: uppercase;
 		font-weight: 300;
-		display: inline-block;
+		display: block;
 	}
 }

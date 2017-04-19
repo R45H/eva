@@ -1,5 +1,18 @@
 .toggle {
 	padding: 10px;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+
+		.toggle {
+			// =====
+
+			&__line {
+				background-color: $color-second;
+			}
+		}
+	}
 
 	&__line {
 		display: block;

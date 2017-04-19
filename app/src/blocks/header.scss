@@ -3,18 +3,23 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: $header-height;
+	height: $header-height-xs;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 15px;
+	padding: 0 15px;
 
-	@include screen-xs() {
-		padding: 20px 50px;
+	@include screen-sm() {
+		padding: 0 50px;
+		height: $header-height;
 	}
 
 	&__logo {
-		width: 30px;
+		width: 50px;
+
+		@include screen-sm() {
+			width: auto;
+		}
 	}
 }
