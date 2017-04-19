@@ -32,7 +32,16 @@ hr {
 }
 
 ::selection {
+	background-color: $color-second;
+	color: white;
+}
 
+a {
+
+	&:hover,
+	&:focus {
+		color: $color-second;
+	}
 }
 
 ol,

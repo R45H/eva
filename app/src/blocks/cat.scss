@@ -1,0 +1,59 @@
+.cat {
+	width: 100%;
+	text-align: center;
+
+	&__img {
+		display: block;
+		width: 100%;
+		padding-bottom: 100%;
+		background: no-repeat 50% 50%;
+		background-size: cover;
+		margin: 0 0 1.5em;
+
+		&_1 {
+			background-image: url($path + 'img/img-1.jpg');
+		}
+
+		&_2 {
+			background-image: url($path + 'img/img-2.jpg');
+		}
+
+		&_3 {
+			background-image: url($path + 'img/img-3.jpg');
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 3.4rem;
+		margin: 0 0 .3em;
+	}
+
+	&__desc {
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 1.4rem;
+		margin: 0 0 1em;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	&__btn {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.6rem;
+		display: inline-block;
+		color: $color-main;
+		border: 2px solid $color-main;
+		padding: 10px 15px;
+
+		&:hover,
+		&:focus {
+			color: $color-second ;
+			border: 2px solid $color-second;
+			text-decoration: none;
+		}
+	}
+}
