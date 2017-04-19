@@ -9,18 +9,6 @@
 		background: no-repeat 50% 50%;
 		background-size: cover;
 		margin: 0 0 1.5em;
-
-		&_1 {
-			background-image: url($path + 'img/cat-1.jpg');
-		}
-
-		&_2 {
-			background-image: url($path + 'img/cat-2.jpg');
-		}
-
-		&_3 {
-			background-image: url($path + 'img/cat-3.jpg');
-		}
 	}
 
 	&__title {

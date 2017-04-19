@@ -1,0 +1,16 @@
+{
+	"menu": [
+		{
+			"name": "Bodies",
+			"link": "#"
+		},
+		{
+			"name": "Lingerie",
+			"link": "#"
+		},
+		{
+			"name": "Shirts",
+			"link": "#"
+		}
+	]
+}

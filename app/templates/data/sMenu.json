@@ -1,0 +1,26 @@
+{
+	"sMenu": [
+		{
+			"name": "My account",
+			"link": "#"
+		},
+		{
+			"name": "Customer care",
+			"link": "#"
+		},
+		{
+			"name": "Account",
+			"link": "#"
+		},
+		{
+			"name": "",
+			"link": "#",
+			"modItem": "search"
+		},
+		{
+			"name": "",
+			"link": "#",
+			"modItem": "bag"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"cat": [
+		{
+			"img": "cat-1.jpg",
+			"title": "Bodies",
+			"desc": "Sharp gear for any occasion"
+		},
+		{
+			"img": "cat-2.jpg",
+			"title": "Lingerie",
+			"desc": "Styles for the vertically blessed"
+		},
+		{
+			"img": "cat-3.jpg",
+			"title": "T-Shirts",
+			"desc": "When comfort meets cool"
+		}
+	]
+}

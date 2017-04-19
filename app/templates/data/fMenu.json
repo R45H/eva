@@ -1,0 +1,32 @@
+{
+	"fMenu": [
+		{
+			"name": "Shipping and Returns",
+			"link": "#"
+		},
+		{
+			"name": "Payments",
+			"link": "#"
+		},
+		{
+			"name": "Subscribe",
+			"link": "#"
+		},
+		{
+			"name": "FAQ",
+			"link": "#"
+		},
+		{
+			"name": "Legal Statement",
+			"link": "#"
+		},
+		{
+			"name": "Contact",
+			"link": "#"
+		},
+		{
+			"name": "© Lovely Eva",
+			"link": "#"
+		}
+	]
+}

@@ -1,0 +1,6 @@
+mixin f-menu(data)
+	ul.f-menu(class = attributes.class)
+
+		each val in data
+			li.f-menu__item
+				a.f-menu__link(href= val.link)= val.name

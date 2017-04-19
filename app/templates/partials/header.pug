@@ -1,3 +1,6 @@
+include ../mixins/menu
+include ../mixins/s-menu
+
 // HEADER
 header.header
 	.toggle.visible-xs.visible-sm
@@ -10,32 +13,7 @@ header.header
 			img.logo__img(src="img/logo.png")
 
 	.header__center.hidden-xs.hidden-sm
-		ul.menu
-			-
-				var items = [
-					'Bodies',
-					'Lingerie',
-					'T-Shirts'
-				]
-
-			each item in items
-				li.menu__item
-					a.menu__link(href='#')= item
+		+menu(menu)
 
 	.header__right
-		ul.s-menu
-			-
-				var items = [
-				'My account',
-				'Customer care',
-				'Account'
-				]
-
-			each item in items
-				li.s-menu__item
-					a.s-menu__link(href='#')= item
-
-			li.s-menu__item.s-menu__item_search
-				a.s-menu__link(href='#')
-			li.s-menu__item.s-menu__item_bag
-				a.s-menu__link(href='#')
+		+s-menu(sMenu)

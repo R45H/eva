@@ -1,3 +1,5 @@
+include ../mixins/cat
+
 .section
 	.container-fluid
 		.banner
@@ -10,21 +12,6 @@
 	.container-fluid
 		h3.sm-title Categories
 		.row
-			.col-sm-4
-				.cat.section__cat
-					.cat__img.cat__img_1
-					h4.cat__title Bodies
-					p.cat__desc Sharp gear for any occasion
-					a.cat__btn(href="#") Shop now
-			.col-sm-4
-				.cat.section__cat
-					.cat__img.cat__img_2
-					h4.cat__title Lingerie
-					p.cat__desc Styles for the vertically blessed
-					a.cat__btn(href="#") Shop now
-			.col-sm-4
-				.cat.section__cat
-					.cat__img.cat__img_3
-					h4.cat__title T-Shirts
-					p.cat__desc When comfort meets cool
-					a.cat__btn(href="#") Shop now
+			each val in cat
+				.col-sm-4
+					+cat(val)(class='section__cat')

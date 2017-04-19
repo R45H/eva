@@ -1,0 +1,6 @@
+mixin cat(data)
+	.cat(class = attributes.class)
+		.cat__img(style='background-image: url(img/' + data.img + ')')
+		h4.cat__title= data.title
+		p.cat__desc= data.desc
+		a.cat__btn(href='#') Shop now

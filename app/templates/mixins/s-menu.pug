@@ -1,0 +1,5 @@
+mixin s-menu(data)
+	ul.s-menu
+		each val in data
+			li.s-menu__item(class= val.modItem ? 's-menu__item_' + val.modItem : '')
+				a.s-menu__link(href= val.link)= val.name

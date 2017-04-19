@@ -5,10 +5,10 @@ html(lang="ru")
 		include ../partials/head
 		title #{page.title} | EVA
 	body
-		block header
+		include ../partials/header
 
 		.wrapper
 			main.main
 				block content
 
-			block footer
+			include ../partials/footer

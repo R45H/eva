@@ -19,7 +19,10 @@ var
    strip        = require('gulp-strip-css-comments'),      // Убирает комментарии
    path         = require('path'),                         // Для работы с путями
    runSequence  = require('run-sequence'),                 // Для синхронного выполнения задач
-   pug          = require('gulp-pug')                      // Шаблонизатор Pug (бывший Jade)
+   pug          = require('gulp-pug'),                     // Шаблонизатор Pug (бывший Jade)
+	merge        = require('gulp-merge-json'),              // Конкатенация JSON
+	data         = require('gulp-data'),                    // Парс JSON
+	fs           = require('fs')                            // Чтение JSON
 ;
 /* ================================ */
 
@@ -42,6 +45,7 @@ var err = {
 // Пути
 var app = 'app/'; //Папка исходников
 var dist = 'dist/'; //Папка готового проекта
+var temp = 'temp/'; //Папка со служебными файлами
 
 /* ================================ */
 
@@ -58,10 +62,24 @@ gulp.task('browser-sync', function() {
 });
 /* ================================ */
 
+/* ========= ТАСК "JSON" ========== */
+gulp.task('json', function() {
+	return gulp.src(app + '/templates/data/**/*.json') // Возьмём файлы
+		.pipe(plumber(err)) // Отслеживаем ошибки
+		.pipe(merge({ // Сольём в один
+			fileName: 'data.json'
+		}))
+		.pipe(gulp.dest('temp/')); // Выплюнем
+});
+/* ================================ */
+
 /* ========= ТАСК "PUG" ========== */
 gulp.task('pug', function () {
-	return gulp.src(app + 'templates/*.pug') //Выберем файлы по нужному пути
+	return gulp.src(app + 'templates/*.pug') // Выберем файлы по нужному пути
 		.pipe(plumber(err)) // Отслеживаем ошибки
+		.pipe(data(function(file) { // Парсим JSON
+			return JSON.parse(fs.readFileSync('temp/data.json'))
+		}))
 		.pipe(pug({ // Сконвертим в HTML
 			pretty: '\t' // Форматируем с табами вместо пробелов
 		}))
@@ -152,6 +170,7 @@ gulp.task('clean', function() {
 gulp.task('build', function(callback) {
 	runSequence(
 		'clean',
+		'json',
 		[
 			'pug',
 			'sass',
@@ -175,6 +194,12 @@ gulp.task('watch', function() {
 	gulp.watch(app + 'src/libs.js', ['js-libs']); // Наблюдение за скачанными JS файлами
 	gulp.watch(app + 'img/*', ['img']); // Наблюдение за картинками
 	gulp.watch(app + 'fonts/*', ['fonts']); // Наблюдение за шрифтами
+	gulp.watch(app + 'templates/data/**/*.json', function() { // Наблюдение за JSON файлами
+		runSequence(
+			'json',
+			'pug'
+		);
+	});
 });
 /* ================================ */
 
