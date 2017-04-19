@@ -1,0 +1,33 @@
+.banner {
+	background: url($path + 'img/img-big.jpg') no-repeat 50% 10%;
+	background-size: cover;
+	padding: 3em 0;
+
+	&__wrap {
+		width: 55%;
+		text-align: right;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: $font-third;
+		font-size: 20rem;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		margin: 0 0 2em;
+		font-family: $font-main-cond;
+		font-weight: 300;
+		font-size: 4.8rem;
+		text-transform: uppercase;
+	}
+
+	&__desc {
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 2.4rem;
+		font-weight: 300;
+	}
+}

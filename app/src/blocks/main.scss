@@ -1,4 +1,7 @@
 .main {
 	flex: 1 0 auto;
-	background-color: #2aabd2;
+
+	&__section {
+		margin-bottom: 3em;
+	}
 }
