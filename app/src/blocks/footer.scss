@@ -1,4 +1,20 @@
 .footer {
 	flex: 0 0 auto;
-	background-color: #990000;
+	padding: 3em 15px;
+
+	&__menu {
+		margin-bottom: 2em;
+	}
+
+	&__soc-wrap {
+		text-align: center;
+	}
+
+	&__soc {
+		margin-right: 1.5em;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 }

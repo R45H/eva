@@ -1,2 +1,30 @@
 // FOOTER
-footer.footer footer
+footer.footer
+	ul.f-menu.footer__menu.hidden-xs
+		-
+			var items = [
+				'Shipping and Returns',
+				'Payments',
+				'Subscribe',
+				'FAQ',
+				'Legal Statement',
+				'Contact',
+				'© Lovely Eva'
+			]
+
+		each item in items
+			li.f-menu__item
+				a.f-menu__link(href='#')= item
+
+	.footer__soc-wrap
+		-
+			var soc = [
+				'facebook',
+				'twitter',
+				'pinterest',
+				'instagram'
+			]
+
+		each item in soc
+			a.soc.footer__soc(href="#")
+				i.fa(class='fa-' + item)
