@@ -4,4 +4,32 @@
 	&__cat {
 		margin-bottom: 2em;
 	}
+
+	&__card-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0 15px;
+	}
+
+	&__card-i {
+		margin-bottom: 3em;
+		width: 100%;
+
+		@include screen-xs() {
+			width: 49%;
+		}
+
+		@include screen-sm() {
+			width: 32%;
+		}
+
+		@include screen-md() {
+			width: 24%;
+		}
+
+		@include screen-lg() {
+			width: 19%;
+		}
+	}
 }
