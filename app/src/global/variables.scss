@@ -1,6 +1,6 @@
-$color-main: black;
-$color-second: #ff295b;
-$color-gray: #7d7d7d;
+$color-main:      black;
+$color-second:    #ff295b;
+$color-gray:      #7d7d7d;
 $color-webcenter: #e96259;
 
 $point-xs: 480px;
@@ -15,7 +15,7 @@ $font-third:     'PlayfairDisplaySC', sans-serif; // normal, italic
 
 $duration: .3s;
 
-$header-height: 50px;
+$header-height: 149px;
 
 $path: '../';
 
@@ -44,29 +44,5 @@ $path: '../';
 @mixin screen-lg($direct: 'min') {
 	@media (if($direct == 'max', 'max-width: #{$point-lg} - 1', 'min-width: #{$point-lg}')) {
 		@content;
-	}
-}
-
-// Ретина
-@mixin retina() {
-
-	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	only screen and (min-resolution: 144dpi) {
-		@content;
-	}
-}
-
-// Подключение изображений для ретины
-@mixin bgi-retina($file, $type: 'png', $width: 100%, $height: $width) {
-	background-image: url($file + '.' + $type);
-
-	@include retina() {
-		background-image: url($file + '@2x.' + $type);
-
-		@if $width == cover or $width == contain {
-			$height: null;
-		}
-
-		background-size: $width $height;
 	}
 }

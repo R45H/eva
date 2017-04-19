@@ -1,7 +1,6 @@
-.f-menu {
+.menu {
 	list-style-type: none;
 	padding: 0;
-	text-align: center;
 
 	&__item {
 		display: inline-block;
@@ -14,7 +13,8 @@
 
 	&__link {
 		font-family: $font-second;
-		color: $color-main;
 		font-size: 1.2rem;
+		color: $color-main;
+		text-transform: uppercase;
 	}
 }

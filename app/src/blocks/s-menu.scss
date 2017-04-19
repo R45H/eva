@@ -1,0 +1,55 @@
+.s-menu {
+	list-style-type: none;
+	padding: 0;
+
+	&__item {
+		vertical-align: middle;
+		margin-right: 2em;
+		display: none;
+
+		@include screen-xs() {
+			display: inline-block;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&_search {
+			display: inline-block;
+
+			.s-menu {
+				// =====
+
+				&__link {
+					width: 15px;
+					height: 15px;
+					background-image: url($path + 'img/search.png');
+				}
+			}
+		}
+
+		&_bag {
+			display: inline-block;
+
+			.s-menu {
+				// =====
+
+				&__link {
+					width: 21px;
+					height: 20px;
+					background-image: url($path + 'img/bag.png');
+				}
+			}
+		}
+	}
+
+	&__link {
+		font-family: $font-second;
+		font-size: 1.2rem;
+		color: $color-main;
+		text-transform: uppercase;
+		font-weight: 300;
+		display: inline-block;
+	}
+}
