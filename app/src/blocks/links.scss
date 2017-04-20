@@ -1,0 +1,29 @@
+.links {
+	text-align: center;
+
+	&__item {
+		display: inline-block;
+		margin-right: 3em;
+		position: relative;
+		line-height: 1;
+
+		&::after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			right: -1.5em;
+			top: 0;
+			height: 100%;
+			border-right: 1px solid $color-gray;
+			pointer-events: none;
+		}
+
+		&:last-child {
+			margin-right: 0;
+
+			&::after {
+				content: none;
+			}
+		}
+	}
+}

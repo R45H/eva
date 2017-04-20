@@ -21,7 +21,14 @@
 		width: 50px;
 
 		@include screen-sm() {
-			width: auto;
+			width: 100px;
+		}
+
+		@include screen-xs(max) {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
 		}
 	}
 }

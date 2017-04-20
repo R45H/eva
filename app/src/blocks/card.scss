@@ -1,6 +1,7 @@
 .card {
 	position: relative;
 	width: 100%;
+	display: block;
 	cursor: pointer;
 
 	&:hover,
@@ -11,6 +12,7 @@
 
 			&__i {
 				opacity: 1;
+				transition: none;
 			}
 		}
 	}
@@ -41,6 +43,14 @@
 			align-items: center;
 			background-color: rgba(255, 255, 255, .8);
 			opacity: 0;
+			transition: $duration / 2 ease-in;
+			color: $color-main;
+
+			&:hover,
+			&:focus {
+				color: $color-main;
+				text-decoration: none;
+			}
 		}
 	}
 

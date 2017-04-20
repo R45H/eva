@@ -2,15 +2,15 @@
 	"menu": [
 		{
 			"name": "Bodies",
-			"link": "#"
+			"link": "/category.html"
 		},
 		{
 			"name": "Lingerie",
-			"link": "#"
+			"link": "/category.html"
 		},
 		{
 			"name": "Shirts",
-			"link": "#"
+			"link": "/category.html"
 		}
 	]
 }

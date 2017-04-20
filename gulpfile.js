@@ -162,7 +162,7 @@ gulp.task('fonts', function() {
 
 /* ========= ТАСК "CLEAN" ========= */
 gulp.task('clean', function() {
-	return del.sync(dist); // Удаляем папку "dist" перед сборкой
+	return del.sync([dist, temp]); // Удаляем папку "dist" перед сборкой
 });
 /* ================================ */
 

@@ -4,7 +4,7 @@
 
 	&__item {
 		vertical-align: middle;
-		margin-right: 1em;
+		margin-right: .7em;
 		display: none;
 
 		@include screen-xs() {
@@ -29,6 +29,11 @@
 					width: 15px;
 					height: 15px;
 					background-image: url($path + 'img/search.png');
+
+					&:hover,
+					&:focus {
+						background-image: url($path + 'img/search-hover.png');
+					}
 				}
 			}
 		}
@@ -43,6 +48,11 @@
 					width: 21px;
 					height: 20px;
 					background-image: url($path + 'img/bag.png');
+
+					&:hover,
+					&:focus {
+						background-image: url($path + 'img/bag-hover.png');
+					}
 				}
 			}
 		}

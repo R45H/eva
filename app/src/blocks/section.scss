@@ -1,8 +1,12 @@
 .section {
 	margin-bottom: 3em;
 
+	&:last-child {
+		margin-bottom: 0;
+	}
+
 	&__cat {
-		margin-bottom: 2em;
+		margin-bottom: 3em;
 	}
 
 	&__card-wrap {
