@@ -13,6 +13,8 @@
 		height: 100%;
 	}
 	@include screen-sm (max) {
+		height: auto;
+		min-height: 100%;
 		max-height: initial;
 		padding-bottom: 20px;
 		margin-top: 0;
@@ -94,9 +96,14 @@
 	}
 }
 
+.first_form p:nth-child(1) {
+	text-align: center;
+}
+
 .first_form p:nth-child(2) {
 	white-space: nowrap;
 	font-size: 14px;
+	text-align: center;
 	@include screen-sm (max) {
 		white-space: normal !important;
 	}

@@ -2,3 +2,4 @@
 @@include('../libs/bootstrap/dist/js/bootstrap.js')
 @@include('../libs/owl.carousel/dist/owl.carousel.js')
 @@include('../libs/perfect-scrollbar/js/perfect-scrollbar.jquery.js')
+@@include('../libs/slick-carousel/slick/slick.min.js')
