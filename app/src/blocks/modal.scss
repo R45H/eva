@@ -9,11 +9,13 @@
 	padding-right: 40px;
 	margin-top: 227px;
 	padding-top: 60px;
+	@include screen-md (max) {
+		height: 100%;
+	}
 	@include screen-sm (max) {
 		max-height: initial;
 		padding-bottom: 20px;
 		margin-top: 0;
-		height: 100%;
 		margin-bottom: initial;
 	}
 	@include screen-xs (max) {
@@ -42,13 +44,11 @@
 	}
 }
 
-
-
 .second_form p {
 	font-family: $font-main;
 	font-weight: 300;
 	text-align: center;
-	margin-bottom: 4em;
+	margin-bottom: 3.9em;
 }
 
 .border_dotted {
@@ -60,9 +60,6 @@
 		display: none;
 	}
 }
-
-
-
 
 .first_form button {
 	margin-top: 20px;
@@ -97,6 +94,14 @@
 	}
 }
 
+.first_form p:nth-child(2) {
+	white-space: nowrap;
+	font-size: 14px;
+	@include screen-sm (max) {
+		white-space: normal !important;
+	}
+}
+
 .second_form a {
 	color: black;
 	text-decoration: underline;
@@ -122,9 +127,6 @@
 	@include screen-sm (max) {
 		margin-top: initial;
 	}
-
-
-
 }
 
 .custom_modal .sign__body form input {
