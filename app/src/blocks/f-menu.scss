@@ -4,11 +4,22 @@
 	text-align: center;
 
 	&__item {
-		display: inline-block;
-		margin-right: 2em;
+		display: none;
+
+		@include screen-sm() {
+			display: inline-block;
+			margin-right: 2em;
+		}
+
+		&:first-child {
+			display: inline-block;
+		}
 
 		&:last-child {
-			margin-right: 0;
+
+			@include screen-sm() {
+				margin-right: 0;
+			}
 		}
 	}
 

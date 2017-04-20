@@ -3,4 +3,7 @@ mixin f-menu(data)
 
 		each val in data
 			li.f-menu__item
-				a.f-menu__link(href= val.link)= val.name
+				if val.link
+					a.f-menu__link(href= val.link)= val.name
+				else
+					span.f-menu__link= val.name

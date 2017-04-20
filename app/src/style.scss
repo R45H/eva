@@ -3,11 +3,12 @@
 @import url('global/global.scss'); // Глобальные стили
 
 @import url('blocks/menu.scss'); // Главное меню
+@import url('blocks/aside/aside.scss'); // Боковое меню
 @import url('blocks/s-menu.scss'); // Меню в шапке сбоку
 @import url('blocks/f-menu.scss'); // Нижнее меню
 @import url('blocks/soc.scss'); // Социальные иконки
 @import url('blocks/logo.scss'); // Логотип
-@import url('blocks/toggle.scss'); // Гамбургер
+@import url('blocks/toggle/toggle.scss'); // Гамбургер
 @import url('blocks/banner.scss'); // Баннер на главной
 @import url('blocks/sm-title.scss'); // Маленький заголовок
 @import url('blocks/cat.scss'); // Блок с категорией

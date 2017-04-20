@@ -9,6 +9,15 @@ body {
 	font-family: $font-main;
 	font-weight: 300;
 	color: $color-main;
+
+	&.blocked {
+		overflow: hidden;
+		padding-right: 17px;
+
+		.header {
+			right: 17px;
+		}
+	}
 }
 
 input,

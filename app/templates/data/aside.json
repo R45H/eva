@@ -1,0 +1,72 @@
+{
+	"aside": [
+		{
+			"item": [
+				{
+					"name": "Sign in",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"item": [
+				{
+					"name": "Bodies",
+					"link": "#",
+					"arrow": true
+				},
+				{
+					"name": "Lingerie",
+					"link": "#",
+					"arrow": true
+				},
+				{
+					"name": "T-Shirts",
+					"link": "#",
+					"arrow": true
+				}
+			]
+		},
+		{
+			"item": [
+				{
+					"name": "Customer care",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"item": [
+				{
+					"name": "Shipping and Returns",
+					"link": "#"
+				},
+				{
+					"name": "Payments",
+					"link": "#"
+				},
+				{
+					"name": "Subscribe",
+					"link": "#"
+				},
+				{
+					"name": "FAQ",
+					"link": "#"
+				},
+				{
+					"name": "Legal Statement",
+					"link": "#"
+				},
+				{
+					"name": "Contact",
+					"link": "#"
+				},
+				{
+					"name": "About Lovely Eva",
+					"link": "#"
+				}
+			],
+			"sm": true
+		}
+	]
+}

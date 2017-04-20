@@ -2,7 +2,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	right: 0;
 	height: $header-height-xs;
 	display: flex;
 	flex-wrap: wrap;
@@ -24,7 +24,7 @@
 			width: 100px;
 		}
 
-		@include screen-xs(max) {
+		@include screen-sm(max) {
 			position: absolute;
 			left: 50%;
 			top: 50%;
