@@ -14,12 +14,14 @@
 @import url('blocks/cat.scss'); // Блок с категорией
 @import url('blocks/card.scss'); // Блок с элементом категории
 @import url('blocks/links.scss'); // Заголовочные ссылки
+@import url('blocks/bag.scss'); // Shopping bag
+@import url('blocks/slick/slick.scss'); // Слайдер в карточке объекта
+@import url('blocks/modal.scss'); // Модалка
+@import url('blocks/search.scss'); // Поиск в шапке
+@import url('blocks/fog/fog.scss'); // Затемнение документа
 
 @import url('blocks/header.scss'); // Шапка
 @import url('blocks/wrapper.scss'); // Общий контейнер
 @import url('blocks/main.scss'); // Контейнер контента
 @import url('blocks/section.scss'); // Секция контента
 @import url('blocks/footer.scss'); // Подвал
-@import url('blocks/modal.scss'); // Модалка
-@import url('blocks/bag.scss'); // Shopping bag
-@import url('blocks/slick/slick.scss'); // Слайдер в карточке объекта

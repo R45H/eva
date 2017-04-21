@@ -1,10 +1,27 @@
 /* Боковое меню в шапке */
-var
-	$sBtn = $('.s-menu__item_search'), // Кнопка поиска
-	$sInp = $('.s-menu__search'), // Поле ввода поиска
-	delay = 300; // Скорость анимации
-
 $sBtn.on('click', function() {
-	$sInp.toggle(delay);
+	if (window.innerWidth >= point) {
+		$sInp.toggle(delay);
+	} else {
+		togSearch();
+	}
+});
+
+$(window).on('resize', function() {
+	if ($sMob.hasClass($sVis)) {
+
+		if (window.innerWidth >= point) {
+			hideSearch();
+			$sInp.show();
+		}
+	}
+
+	if ($sInp.is(':visible')) {
+
+		if (window.innerWidth < point) {
+			showSearch();
+			$sInp.hide();
+		}
+	}
 });
 /* ========== */

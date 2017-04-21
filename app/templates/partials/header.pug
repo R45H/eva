@@ -3,17 +3,23 @@ include ../mixins/s-menu
 
 // HEADER
 header.header
-	.toggle.visible-xs
-		span.toggle__line
-		span.toggle__line
-		span.toggle__line
+	.header__wrap
+		.toggle.visible-xs
+			span.toggle__line
+			span.toggle__line
+			span.toggle__line
 
-	.header__left
-		a.logo.header__logo(href="/")
-			img.logo__img(src="img/logo.png")
+		.header__left
+			a.logo.header__logo(href="/")
+				img.logo__img(src="img/logo.png")
 
-	.header__center.hidden-xs.hidden-sm
-		+menu(menu)
+		.header__center.hidden-xs.hidden-sm
+			+menu(menu)
 
-	.header__right
-		+s-menu(sMenu)
+		.header__right
+			+s-menu(sMenu)
+
+	.search.s-menu.header__search
+		.search__item.s-menu__item.s-menu__item_search
+			a.search__link.s-menu__link(href='#')
+			input.search__input.s-menu__search(type='text' placeholder='SEARCH')

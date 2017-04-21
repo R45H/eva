@@ -15,7 +15,13 @@ body {
 		padding-right: 17px;
 
 		.header {
-			right: 17px;
+			padding-right: 17px;
+		}
+
+		//todo прыгает поиск
+		.search {
+			padding-right: 17px;
+			padding-left: 15px;
 		}
 	}
 }

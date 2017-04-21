@@ -3,18 +3,22 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	height: $header-height-xs;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 15px;
 	background-color: white;
 	z-index: 50;
 
-	@include screen-sm() {
-		padding: 0 50px;
-		height: $header-height;
+	&__wrap {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 15px;
+		height: $header-height-xs;
+
+		@include screen-sm() {
+			padding: 0 50px;
+			height: $header-height;
+		}
 	}
 
 	&__logo {
@@ -30,5 +34,16 @@
 			top: 50%;
 			transform: translateX(-50%) translateY(-50%);
 		}
+	}
+
+	&__search {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+	}
+
+	&_ahead {
+		z-index: 70;
 	}
 }

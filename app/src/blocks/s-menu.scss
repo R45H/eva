@@ -20,7 +20,7 @@
 			display: inline-flex;
 			align-items: center;
 
-			@include screen-xs() {
+			@include screen-sm() {
 				display: inline-flex;
 			}
 
