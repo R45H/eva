@@ -10,7 +10,6 @@ var
 	$asVis = 'aside_visible', // Класс, делающий боковое меню видимым
 	$list = $('.aside__list'), // Внутренний контейнер бокового меню
 	$toggle = $('.toggle'), // Гамбургер
-	$togAct = 'toggle_active', // Класс, делающий активным гамбургер
 	$sBtn = $('.header__right .s-menu__item_search .s-menu__link'), // Кнопка поиска
 	$sInp = $sBtn.next(), // Поле ввода поиска
 	$sMob = $('.search'), // Поиск в мобильной версии
@@ -22,13 +21,11 @@ var
 
 function togAside() { // Показать / скрыть боковое меню
 	$aside.toggleClass($asVis);
-	$toggle.toggleClass($togAct);
 	$body.toggleClass($boHid);
 	$fog.fadeToggle(delay);
 }
 
 function hideAside() { // Скрыть боковое меню
-	$toggle.removeClass($togAct);
 	$aside.removeClass($asVis);
 	$body.removeClass($boHid);
 	$fog.fadeOut(delay);
