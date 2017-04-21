@@ -1,10 +1,10 @@
 nav.aside
-	.aside__list-wrap
-		.aside__list
-			each group in aside
-				ul.aside__group(class= group.sm ? 'aside__group_sm': '')
-					each val in group.item
-						li.aside__group-item
-							a.aside__link(class= val.arrow ? 'aside__link_arrow': '', href= val.link)= val.name
-		.aside__copyright
-			span.aside__link © 2017 Lovely Eva
+	.aside__list
+		each group in aside
+			ul.aside__group(class= group.sm ? 'aside__group_sm': '')
+				each val in group.item
+					li.aside__group-item
+						a.aside__link(class= val.arrow ? 'aside__link_arrow': '', href= val.link)= val.name
+	.aside__copyright
+		span.aside__link © 2017 Lovely Eva
+.aside__fog

@@ -6,21 +6,11 @@
 	transition: .2s ease;
 	z-index: 60;
 	left: -100%;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+	width: 85%;
+	background-color: white;
 
-	&__list-wrap {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 85%;
-		height: 100%;
-		background-color: white;
-		z-index: 1;
-
-		@include screen-xs() {
-			width: 250px;
-		}
+	@include screen-xs() {
+		width: 250px;
 	}
 
 	&__list {
@@ -131,6 +121,17 @@
 				}
 			}
 		}
+	}
+
+	&__fog {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, .6);
+		display: none;
+		z-index: 55;
 	}
 
 	&_visible {

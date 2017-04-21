@@ -4,6 +4,7 @@ $(function() {
 		$aside = $('.aside'), // Боковое меню
 		$list = $('.aside__list'), // Внутренний контейнер
 		$toggle = $('.toggle'), // Гамбургер
+		$fog = $('.aside__fog'), // Затемнение
 		$point = 768; // Брейкпоинт на мобильную версию
 
 	/* Клик по гамбургеру в шапке */
@@ -14,12 +15,8 @@ $(function() {
 	/* ========== */
 
 	/* Клик вне гамбургера */
-		$aside.on('click', function(e) {
-			var $target = $(e.target);
-
-			if ($target.hasClass('aside')) {
-				hideAside();
-			}
+		$fog.on('click', function() {
+			hideAside();
 		});
 	/* ========== */
 
@@ -50,6 +47,7 @@ $(function() {
 		$aside.toggleClass('aside_visible');
 		$toggle.toggleClass('toggle_active');
 		$('body').toggleClass('blocked');
+		$fog.fadeToggle(delay);
 	}
 
 	// Скрыть меню
@@ -57,6 +55,7 @@ $(function() {
 		$toggle.removeClass('toggle_active');
 		$aside.removeClass('aside_visible');
 		$('body').removeClass('blocked');
+		$fog.fadeOut(delay);
 	}
 
 	/* ========== */

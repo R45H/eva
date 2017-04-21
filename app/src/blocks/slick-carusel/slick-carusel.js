@@ -1,1 +1,0 @@
-$('.slick-carusel').slick();
