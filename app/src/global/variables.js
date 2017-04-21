@@ -35,9 +35,14 @@ function hideAside() { // Скрыть боковое меню
 }
 
 function togSearch() { // Показать / скрыть поиск мобильной версии
-	$sMob.toggleClass($sVis);
+	$sMob
+		.toggleClass($sVis)
+		.find('input')
+		.focus();
+
 	$body.toggleClass($boHid);
 	$fog.fadeToggle(delay);
+
 	if ($header.hasClass($hAhead)) {
 		setTimeout(function() {
 			$header.removeClass($hAhead);
@@ -48,7 +53,11 @@ function togSearch() { // Показать / скрыть поиск мобил�
 }
 
 function showSearch() { // Показать поиск мобильной версии
-	$sMob.addClass($sVis);
+	$sMob
+		.addClass($sVis)
+		.find('input')
+		.focus();
+
 	$body.addClass($boHid);
 	$fog.fadeIn();
 	$header.addClass($hAhead);
@@ -58,6 +67,7 @@ function hideSearch() { // Cкрыть поиск мобильной верси�
 	$sMob.removeClass($sVis);
 	$body.removeClass($boHid);
 	$fog.fadeOut(delay);
+
 	setTimeout(function() {
 		$header.removeClass($hAhead);
 	}, delay);

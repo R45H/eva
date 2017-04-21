@@ -1,7 +1,9 @@
 /* Боковое меню в шапке */
 $sBtn.on('click', function() {
 	if (window.innerWidth >= point) {
-		$sInp.toggle(delay);
+		$sInp.toggle(delay, function() {
+			$sInp.focus();
+		});
 	} else {
 		togSearch();
 	}
@@ -12,7 +14,9 @@ $(window).on('resize', function() {
 
 		if (window.innerWidth >= point) {
 			hideSearch();
-			$sInp.show();
+			$sInp
+				.show()
+				.focus();
 		}
 	}
 

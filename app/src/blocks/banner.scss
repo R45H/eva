@@ -32,6 +32,14 @@
 		text-shadow: 1px 1px 1px white;
 
 		@include screen-sm() {
+			font-size: 16rem;
+		}
+
+		@include screen-md() {
+			font-size: 18rem;
+		}
+
+		@include screen-lg() {
 			font-size: 20rem;
 		}
 	}
