@@ -2,7 +2,6 @@
 
 
 $(".slider").slick({
-
 	autoplay: true,
 	dots: true,
 	customPaging : function(slider, i) {
@@ -18,7 +17,7 @@ $(".slider").slick({
 			arrows: false,
 			infinite: false,
 			slidesToShow: 1,
-			slidesToScroll: 2
+			slidesToScroll: 1
 		}
 	}]
 });

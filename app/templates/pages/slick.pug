@@ -1,12 +1,14 @@
 .section.slick
 	.container-fluid
-		.col-md-4.col-md-push-4
+		.col-md-12.col-lg-push-4.col-lg-4
 			section.slider
 				div(data-thumb='/img/mini-icon-1.png')
 					img(src='/img/cat-1.jpg')
 				div(data-thumb='/img/mini-icon-2.png')
 					img(src='/img/cat-2.jpg')
-		.col-md-4.col-md-pull-4.satin-low
+				div(data-thumb='/img/mini-icon-2.png')
+					img(src='/img/cat-2.jpg')
+		.col-lg-4.col-md-6.col-lg-pull-4.slick__satin-low
 			h1 Lace-trim Satin Robe
 			.slick__left
 				p.slick__price € 150
@@ -20,22 +22,22 @@
 				p INFO
 				p It’s love at first touch with this silky-soft robe, in smooth satin edged with scalloped lace.
 				p Black Romantic colo
-				ul.tabrow
-					li.grey
+				ul.slick__tab-color.tab-color
+					li.slick__tab-color__grey
 						a(href='#')
-					li.black
+					li.slick__tab-color__black
 						a(href='#')
-					li.pink
+					li.slick__tab-color__pink
 						a(href='#')
-		.col-md-4
+		.col-md-6.col-lg-4.slick__right-size
 			.slick__size
 				p.slick__size_title Choose youar size:
-				ul.tab-size
+				ul.slick__tab-size
 					li xs
 					li s
 					li m
 					li l
-				p.slick__inform Size information
+				a.slick__inform(href='#') Size information
 				button.slick__add add to card
 				button.slick__white
 					img(src='/img/overview.png')
