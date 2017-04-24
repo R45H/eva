@@ -2,7 +2,8 @@
 	"sMenu": [
 		{
 			"name": "My account",
-			"link": "#"
+			"link": "#",
+			"modal": "sign"
 		},
 		{
 			"name": "Customer care",

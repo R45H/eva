@@ -1,0 +1,12 @@
+.input {
+	border: 1px solid $color-lightgray;
+	height: 54px;
+	font-size: 14px;
+	font-weight: 300;
+	padding: 0 14px;
+	color: $color-gray;
+
+	&_wide {
+		width: 100%;
+	}
+}

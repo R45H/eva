@@ -6,6 +6,6 @@ $(function() {
 	@@include('blocks/fog/fog.js') // Клик по затемнённому документу
 	@@include('blocks/slick/slick.js') // Слайдер карточки объекта
 	@@include('blocks/slick_tabs/tabs.js') // Табы цвета
-	@@include('blocks/tab-size/tab-size.js') // Табы размера
+	@@include('blocks/tab-size.js') // Табы размера
+	@@include('blocks/sign/sign.js') // Модалка входа
 });
-

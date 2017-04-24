@@ -1,0 +1,91 @@
+.sign {
+
+	&__wrap {
+		position: relative;
+		background: white;
+		padding: 60px 0 20px;
+
+		@include screen-sm() {
+			width: 750px;
+			padding: 60px 0 30px;
+		}
+
+		@include screen-md() {
+			width: 940px;
+			padding: 60px 0 60px;
+		}
+
+		@include screen-sm(max) {
+			margin: 0;
+			min-height: 100%;
+		}
+	}
+
+	&__header,
+	&__body {
+		max-width: 500px;
+		margin: 0 auto;
+
+		@include screen-sm() {
+			max-width: none;
+			margin: 0;
+			padding: 15px;
+		}
+
+		@include screen-md() {
+			padding: 15px 45px;
+		}
+	}
+
+	&__close {
+		display: block;
+		position: absolute;
+		background: url($path + 'img/cross.png') no-repeat 50% 50%;
+		width: 60px;
+		height: 60px;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			background-image: url($path + 'img/cross-hover.png');
+		}
+	}
+
+	&__title {
+		font-family: $font-main;
+		font-weight: bold;
+		font-size: 1.8rem;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	&__body {
+
+		@include screen-sm() {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__dot {
+		height: 1px;
+		background-image: repeating-linear-gradient(to right, white, white 4px, $color-main 4px, $color-main 5px);
+		margin-bottom: 30px;
+
+		@include screen-sm() {
+			display: none;
+		}
+	}
+
+	&__form {
+		margin-bottom: 70px;
+
+		@include screen-sm() {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.modal.fade.sign#sign
+	.modal-dialog.sign__wrap
+		.sign__header
+			.sign__close(data-dismiss="sign")
+			h4.sign__title sign in
+		.sign__body
+			.col-sm-6.col-sm-push-6
+				form.form.sign__form
+					h5.form__title already registered?
+					p.form__desc &nbsp;
+					input.input.form__input(type="text" placeholder="E-MAIL")
+					input.input.form__input(type="text" placeholder="PASSWORD")
+					input.button.form__btn(type="submit" value="sign in")
+					a.form__link(href='#') Forgot your password?
+				.sign__dot
+			.col-sm-6.col-sm-pull-6
+				form.form.sign__form
+					h5.form__title create an account
+					p.form__desc Please enter your email address to create an account
+					input.input.form__input(type="text" placeholder="E-MAIL")
+					input.button.button_pink.form__btn(type="submit" value="Create account")

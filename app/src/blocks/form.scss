@@ -1,0 +1,66 @@
+.form {
+	text-align: center;
+
+	@include screen-sm() {
+		text-align: left;
+	}
+
+	&__title {
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $font-main;
+		font-weight: 300;
+		font-size: 1.4rem;
+	}
+
+	&__desc {
+		font-size: 14px;
+		text-align: center;
+
+		@include screen-sm() {
+			white-space: nowrap;
+		}
+	}
+
+	&__input {
+		width: 100%;
+		margin-top: 15px;
+
+		@include screen-sm() {
+			max-width: 370px;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		margin-top: 30px;
+
+		@include screen-sm() {
+			margin-top: 20px;
+			height: 45px;
+		}
+
+		@include screen-md() {
+			margin-right: 25px;
+			width: 45%;
+		}
+	}
+
+	&__link {
+		color: $color-main;
+		font-size: 1.4rem;
+		text-decoration: underline;
+		white-space: nowrap;
+		margin-top: 15px;
+		display: inline-block;
+
+		@include screen-sm() {
+			display: block;
+		}
+
+		@include screen-md() {
+			display: inline-block;
+			margin-top: 0;
+		}
+	}
+}
