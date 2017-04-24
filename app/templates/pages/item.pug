@@ -1,6 +1,12 @@
 .section.slick
 	.container-fluid
-		.col-md-4
+		.col-md-4.col-md-push-4
+			section.slider
+				div(data-thumb='/img/mini-icon-1.png')
+					img(src='/img/cat-1.jpg')
+				div(data-thumb='/img/mini-icon-2.png')
+					img(src='/img/cat-2.jpg')
+		.col-md-4.col-md-pull-4.satin-low
 			h1 Lace-trim Satin Robe
 			.slick__left
 				p.slick__price € 150
@@ -22,15 +28,6 @@
 					li.pink
 						a(href='#')
 		.col-md-4
-			.slider-for
-				.slick-slide 1
-				.slick-slide 2
-			.slick-element
-				.slick-slide
-					img(src='../img/mini-icon-1.png')
-				.slick-slide
-					img(src='../img/mini-icon-2.png')
-		.col-md-4
 			.slick__size
 				p.slick__size_title Choose youar size:
 				ul.tab-size
@@ -40,5 +37,8 @@
 					li l
 				p.slick__inform Size information
 				button.slick__add add to card
+				button.slick__white
+					img(src='/img/overview.png')
+					| item overview
 				p Orders are shipped within 24 hours Shipping is by courier company
 

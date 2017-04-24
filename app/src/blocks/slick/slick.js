@@ -1,17 +1,29 @@
 /* Слайдер карточки объекта */
-$('.slider-for').slick({
-	slidesToShow: 1,
-	arrows: true,
-	fade: true,
-	asNavFor: '.slick-element'
+
+
+$(".slider").slick({
+
+	autoplay: true,
+	dots: true,
+	customPaging : function(slider, i) {
+		var thumb = $(slider.$slides[i]).data('thumb');
+		// return '<a><img src="'+thumb+'"></a>';
+		return '<a><div class="dots-mobile" style="background-image: url('+thumb+'); height: 100%; background-position: 74px -7px;"></div></a>';
+	},
+
+	responsive: [{
+		breakpoint: 768,
+		settings: {
+			dots: true,
+			arrows: false,
+			infinite: false,
+			slidesToShow: 1,
+			slidesToScroll: 2
+		}
+	}]
 });
 
-$('.slick-element').slick({
-	slidesToShow: 2,
-	asNavFor: '.slider-for',
-	centerMode: true,
-	focusOnSelect: true,
-	arrows: false,
-	variableWidth: true
-});
+
+
 /* ========== */
+
