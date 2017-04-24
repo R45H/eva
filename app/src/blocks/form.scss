@@ -34,6 +34,7 @@
 	&__btn {
 		width: 100%;
 		margin-top: 30px;
+		padding: 0;
 
 		@include screen-sm() {
 			margin-top: 20px;
@@ -44,6 +45,31 @@
 			margin-right: 25px;
 			width: 45%;
 		}
+	}
+
+	&__big-btn {
+		margin-top: 2em;
+		width: 100%;
+		max-width: 350px;
+
+		@include screen-sm() {
+			width: 50%;
+		}
+	}
+
+	&__reset {
+		background: transparent;
+		border: none;
+		margin-top: .5em;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+
+	&__check {
+		text-align: left;
 	}
 
 	&__link {
@@ -61,6 +87,76 @@
 		@include screen-md() {
 			display: inline-block;
 			margin-top: 0;
+		}
+	}
+
+	&__cont {
+		padding: 15px;
+
+		@include screen-sm() {
+			padding: 10px;
+		}
+	}
+
+	&__row {
+		margin: 0 -15px;
+		display: block;
+
+		@include screen-sm() {
+			margin: 0 -10px;
+		}
+
+		&::after {
+			@extend %clear;
+		}
+	}
+
+	&__col {
+		float: left;
+		padding: 0 15px;
+		margin-bottom: 15px;
+		width: 100%;
+
+		@include screen-sm() {
+			padding: 0 10px;
+			margin-bottom: 20px;
+		}
+
+		&_half {
+			width: 50%;
+
+			&:first-child {
+				padding-right: 7px;
+
+				@include screen-sm() {
+					padding: 0 10px;
+				}
+			}
+
+			&:last-child {
+				padding-left: 7px;
+
+				@include screen-sm() {
+					padding: 0 10px;
+				}
+			}
+		}
+
+		&_half_sm {
+
+			@include screen-sm() {
+				width: 50%;
+			}
+		}
+	}
+
+	&_thin {
+		max-width: 550px;
+		margin: 0 auto;
+		display: block;
+
+		@include screen-sm() {
+			text-align: center;
 		}
 	}
 }

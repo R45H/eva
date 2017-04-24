@@ -5,6 +5,12 @@
 	font-weight: 300;
 	padding: 0 14px;
 	color: $color-gray;
+	-webkit-appearance: none;
+	border-radius: 0;
+
+	@include input-placeholder() {
+		color: $color-gray;
+	}
 
 	&_wide {
 		width: 100%;
