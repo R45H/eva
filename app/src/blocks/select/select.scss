@@ -1,0 +1,138 @@
+.select {
+	outline: none;
+	padding: 6px 2.5em 6px 10px;
+	background-color: $color-lightgray;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: $color-gray;
+	border: none;
+
+	&__current {
+		outline: none;
+		padding: 0 2.5em 0 14px;
+		margin: 0;
+		text-transform: uppercase;
+		border: 1px solid $color-lightgray;
+		height: 54px;
+		font-size: 14px;
+		font-weight: 300;
+		color: $color-gray;
+		-webkit-appearance: none;
+		border-radius: 0;
+		min-width: 100%;
+
+		&::after {
+			content: '';
+			position: absolute;
+			right: .5em;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			width: 0;
+			height: 0;
+			border: 6px solid transparent;
+			border-top-color: $color-gray;
+			border-bottom: none;
+		}
+
+		&_active {
+			background-color: $color-second;
+			border-color: $color-second;
+
+			&::after {
+				transform: translateX(-50%) translateY(-50%) rotate(180deg);
+				border-top-color: white;
+			}
+
+			&:hover,
+			&:focus {
+				background-color: $color-second;
+			}
+
+			.select__text {
+				color: white;
+			}
+		}
+
+		&.ui-button {
+			width: auto;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		line-height: 52px;
+		color: $color-gray;
+	}
+
+	&__list {
+		background-color: white;
+		z-index: 1;
+		border: 0;
+
+		.ui-menu {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			border: 1px solid $color-lightgray;
+			border-top: none;
+			font-weight: 300;
+			color: $color-gray;
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			max-height: 30em;
+
+			// Стилизация ползунка
+			.ps-scrollbar-y-rail {
+				background-color: transparent !important;
+				opacity: 1;
+
+				&:hover {
+
+					.ps-scrollbar-y {
+						width: 8px !important;
+						background-color: $color-second !important;
+					}
+				}
+			}
+
+			.ps-scrollbar-y {
+				width: 5px !important;
+				background-color: $color-gray !important;
+				border-radius: 2px;
+				transition:
+					background-color .2s linear,
+					height .2s linear,
+					width .2s ease-in-out,
+					border-radius .2s ease-in-out,
+					top .1s ease;
+
+				&:hover,
+				&:active {
+					width: 8px !important;
+					background-color: $color-second !important;
+					transition:
+						background-color .2s linear,
+						height .2s linear,
+						width .2s ease-in-out,
+						border-radius .2s ease-in-out;
+				}
+			}
+			// ===================
+		}
+
+		.ui-menu-item-wrapper {
+			padding: 0 2.5em 0 10px;
+			line-height: 40px;
+			cursor: pointer;
+
+			&.ui-state-active {
+				background-color: $color-lightgray;
+				color: $color-main;
+			}
+		}
+	}
+
+	&_space {
+		margin: 2em 0;
+	}
+}

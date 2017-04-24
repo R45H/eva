@@ -8,4 +8,5 @@ $(function() {
 	@@include('blocks/slick_tabs/tabs.js') // Табы цвета
 	@@include('blocks/tab-size.js') // Табы размера
 	@@include('blocks/sign/sign.js') // Модалка входа
+	@@include('blocks/select/select.js') // Кастомные селекты
 });
