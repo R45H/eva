@@ -28,11 +28,33 @@
 		font-size: 16px;
 		font-weight: bold;
 	}
+
+	@include screen-md(max) {
+		p:nth-of-type(5) {
+			margin-bottom: 30px;
+		}
+
+		&__price {
+			margin-bottom: 15px;
+		}
+	}
+
 	&__left {
 		text-align: center;
 		margin: auto;
-		width: 350px;
+		max-width: 350px;
+		width: 100%;
 		line-height: 25px;
+
+		@include screen-md(max) {
+
+			p {
+				&:nth-of-type(3),
+				&:nth-of-type(4) {
+					display: none;
+				}
+			}
+		}
 	}
 
 	&__add {
@@ -44,6 +66,30 @@
 		color: white;
 		margin-bottom: 30px;
 		margin-top: 30px;
+
+		@include screen-md(max) {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	}
+
+	&__white {
+		width: 340px;
+		height:56px;
+		background: white;
+		border: 1px solid #bbbbbb;
+		text-transform: uppercase;
+		color: black;
+		text-decoration: underline;
+		margin-top: 10px;
+
+		img {
+			margin-right: 1em;
+		}
+
+		@include screen-sm() {
+			display: none;
+		}
 	}
 
 	&__inform {
@@ -53,6 +99,11 @@
 		text-decoration: underline;
 		font-family: $font-main-cond;
 		font-weight: 300;
+		
+		@include screen-md(max) {
+			margin-top: 10px;
+			width: 100%;
+		}
 	}
 
 	&__size {
@@ -71,6 +122,18 @@
 				text-align: center;
 			}
 		}
+
+		@include screen-md(max) {
+			padding-top: 2em;
+			padding-bottom: 0;
+			height: 300px;
+
+			p {
+				&:last-child {
+					display: none;
+				}
+			}
+		}
 	}
 
 	&__size_title {
@@ -78,12 +141,16 @@
 		text-align: center;
 		font-family: $font-main-cond;
 		font-weight: 300;
+
+		@include screen-md(max) {
+			width: 100%;
+		}
 	}
 }
 
 .tab-size {
 	margin-top: 15px;
-	width: 350px;
+	width: 60%;
 	text-align: center;
 	line-height: 40px;
 	font-size: 12px;
@@ -94,6 +161,11 @@
 	align-items: center;
 	flex-wrap: wrap;
 	padding-left: 0;
+
+	@include screen-md(max) {
+		width: 40%;
+		min-width: 200px;
+	}
 
 	li {
 		border: 1px solid #bbbbbb;
@@ -113,16 +185,16 @@
 		}
 	}
 }
-
-.slider-for{
-	background: url('../img/Layer114.png') no-repeat;
-	background-position-x: center;
-	background-position-y: center;
-	background-size: cover;
-	height: 590px;
-	width: 370px;
-	margin: auto;
-}
+//
+//.slider-for{
+//	//background: url('../img/Layer114.png') no-repeat;
+//	background-position-x: center;
+//	background-position-y: center;
+//	background-size: cover;
+//	height: 590px;
+//	width: 370px;
+//	margin: auto;
+//}
 
 .slick-next, .slick-next:focus {
 	background: url('../img/arrow-right-normal.png') no-repeat;
@@ -138,6 +210,10 @@
 	background: url('../img/arrow-right-hover.png') no-repeat;
 }
 
+.slick-prev, .slick-next {
+	height:30px;
+}
+
 .slick-prev:hover {
 	background: url('../img/arrow-left-hover.png') no-repeat;
 }
@@ -146,31 +222,33 @@
 	display: none;
 }
 
-.slick-slide {
 
-	img {
-		width: 48px;
-		height: 48px;
+.slick-prev:before,
+.slick-next:before {
+	color: black;
+}
+
+.slick-dots {
+	bottom: initial;
+	margin-top: 10px;
+}
+
+.slick-dots li {
+	width: 50px;
+	height: 50px;
+
+	@include screen-md(max) {
+		width: 5px;
+		height: 5px;
+		display: inline-block;
+		border-radius: 50%;
+		background: black;
 	}
 }
 
-.slick-list {
-	overflow: hidden;
-	margin: auto;
-}
-
-.slick .slick-list {
-	padding: initial !important;
-}
-
-.slick-element .slick-slide {
+.slick-dots img {
 	width: 50px;
-	text-align: center;
-	margin-right: 5px;
-}
-
-.slick-prev, .slick-next {
-	height: 26px;
+	height: 50px;
 }
 
 //TABS
@@ -192,10 +270,21 @@
 	content: "";
 	display: block;
 	position: absolute;
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
+	top: 0;
+	left: 0;
+}
+
+.tabrow li.selected::before {
+	//background: red;
+	width: 24px;
+	height: 24px;
+	left: 2px;
+	top: 2px;
+	padding: 10px;
 }
 
 .tabrow li {
@@ -210,14 +299,17 @@
 
 .grey.selected {
 	background: #afbece;
+	border: 1px solid #afbece;
 }
 
 .pink.selected {
 	background: #ffc1c1;
+	border: 1px solid #ffc1c1;
 }
 
 .black.selected {
 	background: #000;
+	border: 1px solid black;
 }
 
 .pink::before {
@@ -233,10 +325,41 @@
 }
 
 .tabrow li.selected {
+	position: relative;
 	content: " ";
 	display: block;
 	width: 30px;
 	height: 30px;
+	background: none;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
+}
+
+.satin-low {
+
+	@include screen-md(max) {
+		margin-top: 6em;
+	}
+}
+
+.slick__description {
+	
+	@include screen-md(max) {
+		display: none;
+	}
+}
+
+.slick-slide img {
+	@include screen-md(max) {
+		width: 100%;
+		max-width: 600px;
+		margin: auto;
+	}
+}
+
+.dots-mobile {
+
+	@include screen-md(max) {
+		display: none;
+	}
 }

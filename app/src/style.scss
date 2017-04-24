@@ -23,9 +23,11 @@
 @import url('blocks/form.scss'); // Форма
 @import url('blocks/input.scss'); // Поля ввода
 
+@import url('blocks/sign/sign.scss'); // Модалка
+@import url('blocks/payments.scss'); // payments page
+
 @import url('blocks/header.scss'); // Шапка
 @import url('blocks/wrapper.scss'); // Общий контейнер
 @import url('blocks/main.scss'); // Контейнер контента
 @import url('blocks/section.scss'); // Секция контента
 @import url('blocks/footer.scss'); // Подвал
-@import url('blocks/sign/sign.scss'); // Модалка
