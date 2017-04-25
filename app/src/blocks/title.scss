@@ -1,0 +1,10 @@
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: bold;
+
+	&_space {
+		margin: 1.5em 0 3em;
+	}
+}

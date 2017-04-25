@@ -29,8 +29,6 @@ body {
 input,
 textarea,
 button {
-	-webkit-appearance: none;
-	border-radius: 0;
 
 	&:hover,
 	&:focus,
@@ -53,6 +51,7 @@ hr {
 }
 
 a {
+	color: $color-main;
 
 	&:hover,
 	&:focus {

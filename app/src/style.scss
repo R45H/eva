@@ -21,9 +21,11 @@
 @import url('blocks/button.scss'); // Кнопка
 @import url('blocks/form.scss'); // Форма
 @import url('blocks/input.scss'); // Поля ввода
-
 @import url('blocks/sign/sign.scss'); // Модалка
-@import url('blocks/payments.scss'); // payments page
+@import url('blocks/payments.scss'); // Страница объекта
+@import url('blocks/title.scss'); // Заголовок
+@import url('blocks/check.scss'); // Чекбокс
+@import url('blocks/select/select.scss'); // Кастомные селекты
 @import url('blocks/customer.scss'); // Customer страница
 @import url('blocks/legal.scss'); // Customer legal
 @import url('blocks/text.scss'); // Общие стили для текста
