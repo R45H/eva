@@ -1,0 +1,9 @@
+include ../mixins/card
+
+.section.text
+	h1.title.title_space You searched for  “bodies”
+	p.text__no_result 12 results HAVE BEEN FOUND
+	.section__card-wrap
+		each item in card
+			.section__card-i
+				+card(item)
