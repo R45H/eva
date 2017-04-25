@@ -41,10 +41,5 @@
 		text-decoration: underline;
 		cursor: pointer;
 		color: $color-main;
-
-		@include screen-md(max) {
-			margin-top: 10px;
-			width: 100%;
-		}
 	}
 }

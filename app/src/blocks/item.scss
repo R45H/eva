@@ -1,0 +1,84 @@
+//TODO Перетащить шрифты и аякс-лоадер в соответствующие папки
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	padding-top: 30px;
+
+	&__col {
+		padding: 0 15px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@include screen-lg() {
+			width: 33.333333%;
+		}
+
+		&_1 {
+
+			@include screen-sm() {
+				width: 100%;
+			}
+
+			@include screen-lg() {
+				order: 2;
+			}
+		}
+
+		&_2 {
+
+			@include screen-sm() {
+				width: 50%;
+			}
+
+			@include screen-lg() {
+				order: 1;
+			}
+		}
+
+		&_3 {
+
+			@include screen-sm() {
+				width: 50%;
+			}
+
+			@include screen-lg() {
+				order: 3;
+			}
+		}
+	}
+
+	&__wrap {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	&__i {
+		margin-bottom: 30px;
+
+		&_mob_hid {
+
+			@include screen-sm(max) {
+				display: none;
+			}
+		}
+	}
+
+	&__price {
+		font-size: 1.8rem;
+	}
+
+	&__slider {
+
+		@include screen-sm() {
+			width: 60%;
+			margin: auto;
+		}
+	}
+
+	&__btn {
+		margin-bottom: 30px;
+	}
+}

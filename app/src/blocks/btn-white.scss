@@ -1,0 +1,30 @@
+.btn-white {
+	display: inline-block;
+	background: url($path + 'img/overview.png') no-repeat 15px 50%;
+	height: 54px;
+	line-height: 54px;
+	color: $color-main;
+	text-decoration: none;
+	border: 1px solid $color-lightgray;
+	padding: 0 3em;
+	text-align: center;
+
+	@include screen-sm() {
+		display: none;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: $color-lightgray;
+		text-decoration: none;
+		color: $color-main;
+	}
+
+	&:active {
+		background-color: $color-lighter;
+	}
+
+	&_wide {
+		width: 100%;
+	}
+}
