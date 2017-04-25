@@ -1,0 +1,31 @@
+.section
+	h1.title.title_space Your account settings
+	form.form.form_thin
+		.form__cont
+			.form__row
+				.form__col.form__col_half_sm
+					input.input.input_wide(type="text" placeholder="FIRST NAME")
+				.form__col.form__col_half_sm
+					input.input.input_wide(type="text" placeholder="LAST NAME")
+
+			.form__row
+				.form__col
+					input.input.input_wide(type="email" placeholder="E-MAIL")
+
+			.form__row
+				.form__col
+					input.input.input_wide(type="password" placeholder="PASSWORD")
+
+			.form__row
+				.form__col
+					.check.form__check
+						input#radio1.check__input(type="checkbox", name="box", value="show-pass")
+						label.check__label(for="radio1") Show password
+
+			.form__row
+				.form__col
+					input.button.form__big-btn(type="submit" value="save")
+
+			.form__row
+				.form__col
+					input.form__reset(type="reset" value="Cancel")

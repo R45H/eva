@@ -22,16 +22,16 @@
 		min-width: 100%;
 
 		&::after {
-			content: '';
+			content: '\f107';
+			font-family: $font-fa;
 			position: absolute;
-			right: .5em;
+			right: .1em;
 			top: 50%;
 			transform: translateX(-50%) translateY(-50%);
-			width: 0;
-			height: 0;
-			border: 6px solid transparent;
-			border-top-color: $color-gray;
-			border-bottom: none;
+			font-size: 2.5rem;
+			line-height: 0;
+			transition: transform $duration / 2 ease;
+			color: $color-lighter;
 		}
 
 		&_active {
@@ -40,7 +40,7 @@
 
 			&::after {
 				transform: translateX(-50%) translateY(-50%) rotate(180deg);
-				border-top-color: white;
+				color: white;
 			}
 
 			&:hover,
@@ -79,7 +79,9 @@
 			color: $color-gray;
 			font-size: 1.4rem;
 			text-transform: uppercase;
-			max-height: 30em;
+			max-height: 20em;
+			position: relative;
+			outline: none;
 
 			// Стилизация ползунка
 			.ps-scrollbar-y-rail {
@@ -97,7 +99,7 @@
 
 			.ps-scrollbar-y {
 				width: 5px !important;
-				background-color: $color-gray !important;
+				background-color: $color-lighter !important;
 				border-radius: 2px;
 				transition:
 					background-color .2s linear,

@@ -1,5 +1,5 @@
 /* Кастомные селекты */
-$('.select').selectmenu({
+$select.selectmenu({
 	classes: {
 		'ui-selectmenu-button': 'select__current', // Кнопка селекта
 		'ui-selectmenu-button-open': 'select__current_active', // Состояние кнопки при открытом селекте
@@ -10,11 +10,10 @@ $('.select').selectmenu({
 });
 
 $(window).on('resize', function() {
-	$('.select').selectmenu('close');
+	$select.selectmenu('close');
 });
 
-//todo пофиксить ползунок
-$('.select').on('selectmenuopen', function() {
+$select.on('selectmenuopen', function() {
 	$('.ui-menu').perfectScrollbar();
 });
 /* ========== */

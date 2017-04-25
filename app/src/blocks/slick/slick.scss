@@ -271,7 +271,6 @@
 			&::before {
 				background: #ffc1c1;
 			}
-
 		}
 	}
 }
@@ -363,17 +362,17 @@
 }
 
 .slick-next, .slick-next:focus {
-	background: url('../img/arrow-right-normal.png') no-repeat;
+	background: url($path + 'img/arrow-right-normal.png') no-repeat;
 	right: -70px;
 }
 
 .slick-prev, .slick-prev:focus {
-	background: url('../img/arrow-left-normal.png') no-repeat;
+	background: url($path + 'img/arrow-left-normal.png') no-repeat;
 	left: -70px;
 }
 
 .slick-next:hover {
-	background: url('../img/arrow-right-hover.png') no-repeat;
+	background: url($path + 'img/arrow-right-hover.png') no-repeat;
 }
 
 .slick-prev, .slick-next {
@@ -381,10 +380,11 @@
 }
 
 .slick-prev:hover {
-	background: url('../img/arrow-left-hover.png') no-repeat;
+	background: url($path + '/img/arrow-left-hover.png') no-repeat;
 }
 
-.slick-next:before, .slick-prev:before {
+.slick-next:before,
+.slick-prev:before {
 	display: none;
 }
 
