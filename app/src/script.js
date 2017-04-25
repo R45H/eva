@@ -1,12 +1,12 @@
 $(function() {
-	@@include('global/variables.js') // Переменные
+	@@include('global/variables.js')
 
-	@@include('blocks/s-menu/s-menu.js') // Боковое меню в шапке
-	@@include('blocks/aside/aside.js') // Боковое меню
-	@@include('blocks/fog/fog.js') // Клик по затемнённому документу
-	@@include('blocks/slick/slick.js') // Слайдер карточки объекта
-	@@include('blocks/slick_tabs/tabs.js') // Табы цвета
-	@@include('blocks/tab-size.js') // Табы размера
-	@@include('blocks/sign/sign.js') // Модалка входа
-	@@include('blocks/select/select.js') // Кастомные селекты
+	@@include('blocks/s-menu/s-menu.js')
+	@@include('blocks/aside/aside.js')
+	@@include('blocks/fog/fog.js')
+	@@include('blocks/slick/slick.js')
+	@@include('blocks/slick_tabs/tabs.js')
+	@@include('blocks/tab-size.js')
+	@@include('blocks/sign/sign.js')
+	@@include('blocks/select/select.js')
 });
