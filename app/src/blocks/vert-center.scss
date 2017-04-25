@@ -1,5 +1,9 @@
 .vert-center {
-	min-height: 500px;
+	min-height: 50vh;
 	display: flex;
 	align-items: center;
+
+	&__i {
+		width: 100%;
+	}
 }

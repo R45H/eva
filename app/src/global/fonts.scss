@@ -24,6 +24,19 @@
 }
 /* ========== */
 
+/* Slick */
+@font-face {
+	font-family: 'slick';
+	font-weight: normal;
+	font-style: normal;
+	src: url($path + 'fonts/slick/slick.eot');
+	src: url($path + 'fonts/slick/slick.eot?#iefix') format('embedded-opentype'),
+	url($path + 'fonts/slick/slick.woff') format('woff'),
+	url($path + 'fonts/slick/slick.ttf') format('truetype'),
+	url($path + 'fonts/slick/slick.svg#slick') format('svg');
+}
+/* ========== */
+
 /* ProximaNova */
 @font-face {
 	font-family: 'ProximaNova';

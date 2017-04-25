@@ -30,16 +30,20 @@
 				background-clip: content-box;
 				background-origin: content-box;
 				box-sizing: content-box;
-
 			}
 
 			&.slick-active {
+				background-color: $color-main;
 
-				@include screen-md(max) {
-					background-color: $color-main;
+				@include screen-md() {
+					background-color: transparent;
 				}
 			}
 		}
+	}
+
+	.slick-slide {
+		outline: none;
 	}
 
 	.slick-prev,

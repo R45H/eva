@@ -26,17 +26,17 @@
 		&_space {
 
 			@include screen-sm() {
-				width: 74%;
+				width: 100%;
+				text-align: center;
 			}
 		}
-
 	}
 
 	&__title {
 		margin: 0;
 		font-family: $font-third;
 		text-transform: uppercase;
-		font-size: 7rem;
+		font-size: 5rem;
 		text-shadow: 1px 1px 1px white;
 
 		@include screen-sm() {
@@ -83,7 +83,6 @@
 	&_contact {
 		background: url('../img/contact.png') no-repeat 70% 10%;
 		background-size: cover;
-		//height: 650px;
 
 		@include screen-sm() {
 			padding: 12em 0;

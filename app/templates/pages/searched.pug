@@ -1,5 +1,10 @@
+include ../mixins/card
+
 .section
-	.vert-center.text
-		.container
-			h1.title.title_space You searched for  “bla! bla! bla!”
-			p.text__no_result No results were found for your search
+	.searched.section__searched
+		h1.title.title_space.searched__title You searched for “bodies”
+		p.searched__desc 12 results have been found
+	.section__card-wrap
+		each item in card
+			.section__card-i
+				+card(item)

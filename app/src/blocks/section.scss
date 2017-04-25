@@ -60,10 +60,20 @@
 		padding-right: 15px;
 		padding-left: 15px;
 
-		span {
-			border-bottom: 1px solid #bfbfbf;
+		a {
+			border-bottom: 1px solid $color-lighter;
 			margin-left: 3px;
 			margin-right: 3px;
+
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				border-bottom-color: $color-second;
+			}
 		}
+	}
+
+	&__searched {
+		margin-bottom: 4em;
 	}
 }

@@ -1,0 +1,6 @@
+mixin list(data)
+	ul.list
+		each val in data
+			li.list__item
+				if val.link
+					a.list__link(href= val.link)= val.name
