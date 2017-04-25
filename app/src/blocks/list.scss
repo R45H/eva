@@ -1,0 +1,15 @@
+.list {
+	list-style-type: none;
+	text-align: center;
+	padding-left: 0;
+	line-height: 30px;
+	font-size: 14px;
+
+	&__item {
+		list-style-type: none;
+	}
+
+	&__link {
+
+	}
+}
