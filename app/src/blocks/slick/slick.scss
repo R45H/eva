@@ -1,3 +1,4 @@
+//TODO Перетащить шрифты и аякс-лоадер в соответствующие папки
 .slick {
 
 	&__satin-low {
@@ -112,22 +113,6 @@
 		}
 	}
 
-	&__inform {
-		margin-top: 30px;
-		text-align: center;
-		width: 340px;
-		text-decoration: underline;
-		font-family: $font-main-cond;
-		font-weight: 300;
-		cursor: pointer;
-		color: black;
-
-		@include screen-md(max) {
-			margin-top: 10px;
-			width: 100%;
-		}
-	}
-
 	&__size {
 		display: flex;
 		height: 590px;
@@ -164,55 +149,6 @@
 
 		@include screen-lg() {
 			padding-bottom: 0;
-		}
-	}
-
-	&__size_title {
-		width: 300px;
-		text-align: center;
-		font-family: $font-main-cond;
-		font-weight: 300;
-
-		@include screen-md(max) {
-			width: 100%;
-		}
-	}
-
-	&__tab-size {
-		margin-top: 15px;
-		width: 60%;
-		text-align: center;
-		line-height: 40px;
-		font-size: 12px;
-		position: relative;
-		display: flex;
-		justify-content: space-around;
-		list-style-type: none;
-		align-items: center;
-		flex-wrap: wrap;
-		padding-left: 0;
-
-		@include screen-md(max) {
-			width: 40%;
-			min-width: 200px;
-		}
-
-		li {
-			border: 1px solid #bbbbbb;
-			width: 40px;
-			height: 40px;
-			text-transform: uppercase;
-			font-size: 16px;
-			cursor: pointer;
-			font-family:$font-main;
-			font-weight: 300;
-
-			&.selected {
-				content: " ";
-				display: block;
-				background: #bbbbbb;
-				color: white;
-			}
 		}
 	}
 }

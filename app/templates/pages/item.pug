@@ -1,7 +1,7 @@
 .section
 	.slick
 		.container-fluid
-			.col-md-12.col-lg-push-4.col-lg-4
+			.col-md-12.col-lg-4.col-lg-push-4
 				section.slider
 					div(data-thumb='/img/mini-icon-1.png')
 						img(src='/img/cat-1.jpg')
@@ -9,7 +9,7 @@
 						img(src='/img/cat-2.jpg')
 					div(data-thumb='/img/mini-icon-2.png')
 						img(src='/img/cat-2.jpg')
-			.col-lg-4.col-md-6.col-lg-pull-4.slick__satin-low
+			.col-md-6.col-lg-4.col-lg-pull-4.slick__satin-low
 				h1.title Lace-trim Satin Robe
 				.slick__left
 					p.slick__price 150 руб.
@@ -29,16 +29,17 @@
 							.tab-color__item.tab-color__item_black
 							.tab-color__item.tab-color__item_pink
 			.col-md-6.col-lg-4.slick__right-size
-				.slick__size
-					p.slick__size_title Choose your size:
-					ul.slick__tab-size
-						li xs
-						li s
-						li m
-						li l
-					a.slick__inform(href='#') Size information
-					button.slick__add add to card
-					button.slick__white
-						img(src='/img/overview.png')
-						| item overview
-					p Orders are shipped within 24 hours Shipping is by courier company
+				//.slick__size
+				.tab-size.section__tab-size
+					p.tab-size__title Choose your size:
+					ul.tab-size__wrap
+						li.tab-size__item xs
+						li.tab-size__item s
+						li.tab-size__item m
+						li.tab-size__item l
+					a.tab-size__info(href='#') Size information
+				a.button.button_wide(href='#') add to cart
+				button.slick__white
+					img(src='/img/overview.png')
+					| item overview
+				p Orders are shipped within 24 hours Shipping is by courier company

@@ -39,6 +39,7 @@
 		@include screen-sm() {
 			margin-top: 20px;
 			height: 45px;
+			line-height: 45px;
 		}
 
 		@include screen-md() {

@@ -2,14 +2,18 @@
 	display: inline-block;
 	background-color: $color-main;
 	height: 54px;
+	line-height: 54px;
 	border: none;
 	color: white;
 	text-transform: uppercase;
 	padding: 0 3em;
+	text-align: center;
 
 	&:hover,
 	&:focus {
 		background-color: lighten($color-main, 14%);
+		text-decoration: none;
+		color: white;
 	}
 
 	&:active {
