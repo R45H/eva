@@ -25,10 +25,4 @@ $(window).on('resize', function() {
 });
 /* ========== */
 
-/* Отключение скролла страницы пока курсор на меню */
-$aside.on('mousewheel', function(e) {
-	e.preventDefault();
-});
-/* ========== */
-
 /* ========== */

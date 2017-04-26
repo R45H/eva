@@ -7,5 +7,12 @@ $sign.on('hidden.bs.modal', function() { // При закрытии модалк
 	$(this)
 		.find('.input')
 		.val('');
+	$body.removeClass($boHid);
+});
+
+$sign.on('show.bs.modal', function() { // Фикс прыгающей шапки
+	if (hasScroll('Height')) {
+		$body.addClass($boHid);
+	}
 });
 /* ========== */

@@ -26,8 +26,15 @@ var
 
 function togAside() { // Показать / скрыть боковое меню
 	$aside.toggleClass($asVis);
-	$body.toggleClass($boHid);
 	$fog.fadeToggle(delay);
+
+	if ($aside.hasClass($asVis)){
+		if (hasScroll('Height')) {
+			$body.addClass($boHid);
+		}
+	} else {
+		$body.toggleClass($boHid);
+	}
 }
 
 function hideAside() { // Скрыть боковое меню
@@ -42,8 +49,15 @@ function togSearch() { // Показать / скрыть поиск мобил�
 		.find('input')
 		.focus();
 
-	$body.toggleClass($boHid);
 	$fog.fadeToggle(delay);
+
+	if ($sMob.hasClass($sVis)){
+		if (hasScroll('Height')) {
+			$body.addClass($boHid);
+		}
+	} else {
+		$body.toggleClass($boHid);
+	}
 
 	if ($header.hasClass($hAhead)) {
 		setTimeout(function() {
@@ -59,10 +73,12 @@ function showSearch() { // Показать поиск мобильной вер
 		.addClass($sVis)
 		.find('input')
 		.focus();
-
-	$body.addClass($boHid);
 	$fog.fadeIn();
 	$header.addClass($hAhead);
+
+	if (hasScroll('Height')) {
+		$body.addClass($boHid);
+	}
 }
 
 function hideSearch() { // Cкрыть поиск мобильной версии
@@ -73,6 +89,15 @@ function hideSearch() { // Cкрыть поиск мобильной верси�
 	setTimeout(function() {
 		$header.removeClass($hAhead);
 	}, delay);
+}
+
+function hasScroll(a) { // Проверка наличия скролла на странице
+	var d = document,
+		b = d.body,
+		e = d.documentElement,
+		c = "client" + a;
+	a = "scroll" + a;
+	return /CSS/.test(d.compatMode)? (e[c]< e[a]) : (b[c]< b[a])
 }
 
 /* ========== */

@@ -23,10 +23,11 @@
 		max-width: 350px;
 	}
 
+	//todo прыгает поиск
 	&_visible {
 
 		@include screen-sm(max) {
-			padding: 15px 0;
+			padding: 15px 17px 15px 15px;
 			height: auto;
 		}
 
