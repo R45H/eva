@@ -8,12 +8,18 @@
 	text-transform: uppercase;
 	padding: 0 3em;
 	text-align: center;
+	font-weight: 300;
+	font-family: $font-main;
+	white-space: nowrap;
+
+	&:hover {
+		background-color: lighten($color-black, 14%);
+	}
 
 	&:hover,
 	&:focus {
-		background-color: lighten($color-black, 14%);
-		text-decoration: none;
 		color: white;
+		text-decoration: none;
 	}
 
 	&:active {

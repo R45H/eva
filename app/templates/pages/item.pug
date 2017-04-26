@@ -15,17 +15,9 @@
 				.item__i
 					h1.title Lace-trim Satin Robe
 					p.item__price 150 руб.
-				.item__i.item__i_mob_hid
-					p No closure
-						br
-						| 34½" from shoulder; hits above knee
-						br
-						| Allover satin with lace trim at sleeves and hem
-						br
-						| Imported polyester/nylon
-				.item__i.item__i_mob_hid
-					p INFO
-					p It’s love at first touch with this silky-soft robe, in smooth satin edged with scalloped lace.
+				.item__i.item__desc
+					p No closure 34½" from shoulder; hits above knee Allover satin with lace trim at sleeves and hem Imported polyester/nylon
+					p No closure 34½" from shoulder; hits above knee Allover satin with lace trim at sleeves and hem Imported polyester/nylon
 				.item__i
 					.tab-color.section__tab-color
 						p.tab-color__title Black romantic color
@@ -36,7 +28,7 @@
 
 		.item__col.item__col_3
 			.item__wrap
-				.tab-size.section__tab-size
+				.tab-size.item__tab-size
 					p.tab-size__title Choose your size:
 					ul.tab-size__wrap
 						li.tab-size__item xs
@@ -44,8 +36,9 @@
 						li.tab-size__item m
 						li.tab-size__item l
 					a.tab-size__info(href='#') Size information
-				a.button.button_wide.item__btn(href='#') add to cart
-				a.btn-white.btn-white_wide.item__btn(href='#') Item overview
-				p Orders are shipped within 24 hours
-					br
-					| Shipping is by courier company
+					a.button.button_wide.tab-size__btn(href='#') add to cart
+					a#iBtn.btn-white.btn-white_wide.tab-size__white-btn(href='#')
+						span.btn-white__text Item overview
+					p.tab-size__desc Orders are shipped within 24 hours
+						br
+						| Shipping is by courier company

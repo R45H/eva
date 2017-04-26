@@ -56,6 +56,8 @@
 		}
 
 		&::after {
+			content: '';
+			background: url($path + 'img/icons.png') no-repeat;
 			width: 15px;
 			height: 26px;
 			display: inline-block;
@@ -65,38 +67,32 @@
 	.slick-prev {
 		left: -70px;
 
+		&::after {
+			background-position: -57px 0px;
+		}
+
 		&:hover,
 		&:focus {
 
-
 			&::after {
-				content: ' ';
-				background: url($path + 'img/icons.png') no-repeat -42px 0px;
+				background-position: -42px 0px;
 			}
-		}
-
-		&::after {
-			content: ' ';
-			background: url($path + 'img/icons.png') no-repeat -57px 0px;
 		}
 	}
 
 	.slick-next {
 		right: -70px;
 
+		&::after {
+			background-position: -15px -20px;
+		}
+
 		&:hover,
 		&:focus {
 
-
 			&::after {
-				content: ' ';
-				background: url($path + 'img/icons.png') no-repeat 0px -20px;
+				background-position: 0px -20px;
 			}
-		}
-
-		&::after {
-			content: ' ';
-			background: url($path + 'img/icons.png') no-repeat -15px -20px;
 		}
 	}
 

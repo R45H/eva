@@ -21,6 +21,18 @@
 				margin-right: 0;
 			}
 		}
+
+		&._active {
+			cursor: default;
+
+			.f-menu {
+				// =====
+
+				&__link {
+					color: $color-second;
+				}
+			}
+		}
 	}
 
 	&__link {

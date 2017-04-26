@@ -51,8 +51,6 @@
 
 			&::before {
 				background-position: -19px -46px;
-				width: 17px;
-				height: 17px;
 			}
 		}
 
@@ -62,8 +60,9 @@
 			background: url($path + 'img/icons.png') no-repeat -36px -46px;
 			width: 17px;
 			height: 17px;
-			right: 20px;
-			top: 20px;
+			top: 50%;
+			left: 50%;
+			margin: -9px 0 0 -9px;
 		}
 	}
 

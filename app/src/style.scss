@@ -4,7 +4,7 @@
 
 @import url('blocks/menu.scss'); // Главное меню
 @import url('blocks/aside/aside.scss'); // Боковое меню
-@import url('blocks/s-menu.scss'); // Меню в шапке сбоку
+@import url('blocks/s-menu/s-menu.scss'); // Меню в шапке сбоку
 @import url('blocks/f-menu.scss'); // Нижнее меню
 @import url('blocks/soc.scss'); // Социальные иконки
 @import url('blocks/logo.scss'); // Логотип
@@ -15,7 +15,7 @@
 @import url('blocks/card.scss'); // Блок с элементом категории
 @import url('blocks/links.scss'); // Заголовочные ссылки
 @import url('blocks/bag.scss'); // Shopping bag
-@import url('blocks/item.scss'); // Карточка объекта
+@import url('blocks/item/item.scss'); // Карточка объекта
 @import url('blocks/search.scss'); // Поиск в шапке
 @import url('blocks/fog/fog.scss'); // Затемнение документа
 @import url('blocks/button.scss'); // Кнопка
