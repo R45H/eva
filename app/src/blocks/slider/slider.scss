@@ -54,25 +54,49 @@
 		&::before {
 			display: none;
 		}
+
+		&::after {
+			width: 15px;
+			height: 26px;
+			display: inline-block;
+		}
 	}
 
 	.slick-prev {
 		left: -70px;
-		background: url($path + 'img/arrow-left-normal.png') no-repeat 50% 50%;
 
 		&:hover,
 		&:focus {
-			background-image: url($path + '/img/arrow-left-hover.png');
+
+
+			&::after {
+				content: ' ';
+				background: url($path + 'img/icons.png') no-repeat -42px 0px;
+			}
+		}
+
+		&::after {
+			content: ' ';
+			background: url($path + 'img/icons.png') no-repeat -57px 0px;
 		}
 	}
 
 	.slick-next {
 		right: -70px;
-		background: url($path + 'img/arrow-right-normal.png') no-repeat 50% 50%;
 
 		&:hover,
 		&:focus {
-			background-image: url($path + 'img/arrow-right-hover.png');
+
+
+			&::after {
+				content: ' ';
+				background: url($path + 'img/icons.png') no-repeat 0px -20px;
+			}
+		}
+
+		&::after {
+			content: ' ';
+			background: url($path + 'img/icons.png') no-repeat -15px -20px;
 		}
 	}
 
