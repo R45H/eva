@@ -40,7 +40,6 @@
 	&__close {
 		display: block;
 		position: absolute;
-		background: url($path + 'img/cross.png') no-repeat 50% 50%;
 		width: 60px;
 		height: 60px;
 		right: 0;
@@ -49,7 +48,22 @@
 
 		&:hover,
 		&:focus {
-			background-image: url($path + 'img/cross-hover.png');
+
+			&::before {
+				background-position: -19px -46px;
+				width: 17px;
+				height: 17px;
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			background: url($path + 'img/icons.png') no-repeat -36px -46px;
+			width: 17px;
+			height: 17px;
+			right: 20px;
+			top: 20px;
 		}
 	}
 

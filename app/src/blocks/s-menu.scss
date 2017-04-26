@@ -30,11 +30,11 @@
 				&__link {
 					width: 15px;
 					height: 15px;
-					background-image: url($path + 'img/search.png');
+					background: url($path + 'img/icons.png') -42px -26px;
 
 					&:hover,
 					&:focus {
-						background-image: url($path + 'img/search-hover.png');
+						background-position: -57px -26px;
 					}
 				}
 			}
@@ -50,11 +50,12 @@
 				&__link {
 					width: 21px;
 					height: 20px;
-					background-image: url($path + 'img/bag.png');
+					background-image: url($path + 'img/icons.png');
+
 
 					&:hover,
 					&:focus {
-						background-image: url($path + 'img/bag-hover.png');
+						background-position: -21px 0px;
 					}
 				}
 			}
