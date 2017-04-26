@@ -90,15 +90,12 @@
 		font-size: 1.2rem;
 		color: $color-main;
 		text-transform: uppercase;
-		font-weight: 300;
 		display: block;
 	}
 
 	&__search {
 		font-size: 1.2rem;
-		color: $color-main;
 		font-family: $font-second;
-		font-weight: 300;
 		outline: none;
 		border: none;
 		border-bottom: 1px solid $color-gray;
@@ -106,20 +103,8 @@
 		padding: .5em;
 		display: none;
 
-		&::-webkit-input-placeholder {
-			color: $color-main;
-		}
-
-		&::-moz-placeholder {
-			color: $color-main;
-		}
-
-		&:-moz-placeholder {
-			color: $color-main;
-		}
-
-		&:-ms-input-placeholder {
-			color: $color-main;
+		@include input-placeholder() {
+			color: $color-gray;
 		}
 	}
 }

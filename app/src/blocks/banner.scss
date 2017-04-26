@@ -3,12 +3,12 @@
 	background-size: cover;
 	padding: 15em 0 1em;
 	display: block;
-	color: $color-main;
+	color: $color-black;
 
 	&:hover,
 	&:focus {
 		text-decoration: none;
-		color: $color-main;
+		color: $color-black;
 	}
 
 	@include screen-sm() {

@@ -5,7 +5,7 @@ $sign.on('shown.bs.modal', function() { // Фокус при открытии
 
 $sign.on('hidden.bs.modal', function() { // При закрытии модалки очищаются инпуты
 	$(this)
-		.find('input')
+		.find('.input')
 		.val('');
 });
 /* ========== */

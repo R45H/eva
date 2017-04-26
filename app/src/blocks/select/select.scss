@@ -1,7 +1,7 @@
 .select {
 	outline: none;
 	padding: 6px 2.5em 6px 10px;
-	background-color: $color-lightgray;
+	background-color: white;
 	text-transform: uppercase;
 	font-weight: 600;
 	color: $color-gray;
@@ -12,14 +12,14 @@
 		padding: 0 2.5em 0 14px;
 		margin: 0;
 		text-transform: uppercase;
-		border: 1px solid $color-lightgray;
+		border: 1px solid $color-lighter;
 		height: 54px;
 		font-size: 14px;
-		font-weight: 300;
 		color: $color-gray;
 		-webkit-appearance: none;
 		border-radius: 0;
 		min-width: 100%;
+		background-color: white;
 
 		&::after {
 			content: '\f107';
@@ -31,7 +31,7 @@
 			font-size: 2.5rem;
 			line-height: 0;
 			transition: transform $duration / 2 ease;
-			color: $color-lighter;
+			color: lighten($color-gray, 10%);
 		}
 
 		&_active {
@@ -73,9 +73,8 @@
 			list-style-type: none;
 			padding: 0;
 			margin: 0;
-			border: 1px solid $color-lightgray;
+			border: 1px solid $color-lighter;
 			border-top: none;
-			font-weight: 300;
 			color: $color-gray;
 			font-size: 1.4rem;
 			text-transform: uppercase;

@@ -16,11 +16,11 @@
 		font-weight: bold;
 		font-size: 3.4rem;
 		margin: 0 0 .3em;
+		color: $color-black;
 	}
 
 	&__desc {
 		text-transform: uppercase;
-		font-weight: 300;
 		font-size: 1.4rem;
 		margin: 0 0 1em;
 		text-overflow: ellipsis;
@@ -33,8 +33,8 @@
 		font-weight: bold;
 		font-size: 1.6rem;
 		display: inline-block;
-		color: $color-main;
-		border: 2px solid $color-main;
+		color: $color-black;
+		border: 2px solid $color-black;
 		padding: 10px 15px;
 
 		&:hover,
