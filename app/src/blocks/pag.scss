@@ -1,0 +1,50 @@
+.pag {
+	text-align: center;
+
+	&__list {
+		list-style-type: none;
+		padding: 0 15px;
+		display: inline-block;
+	}
+
+	&__item {
+		display: block;
+		float: left;
+		margin: 0 7px 7px 0;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		display: block;
+		min-width: 30px;
+		height: 30px;
+		line-height: 27px;
+		text-align: center;
+		border: 1px solid $color-gray;
+		text-decoration: none;
+		padding: 0 3px;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: white;
+			background-color: $color-gray;
+		}
+
+		&_active {
+			cursor: default;
+			color: white;
+			background-color: $color-second;
+			border-color: $color-second;
+
+			&:hover,
+			&:focus {
+				background-color: $color-second;
+				border-color: $color-second;
+			}
+		}
+	}
+}

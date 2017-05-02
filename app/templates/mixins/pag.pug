@@ -1,0 +1,14 @@
+mixin pag(num, active)
+	.pag
+		ul.pag__list
+
+			- for (var i = 1; i <= num; i++)
+				li.pag__item
+					if i == active
+						span.pag__link.pag__link_active= i
+					else
+						a.pag__link(href='#')= i
+
+			li.pag__item
+				a.pag__link.pag__link_right(href='#')
+					i.fa.fa-angle-right
