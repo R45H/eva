@@ -1,0 +1,109 @@
+.prop {
+
+	&__wrap {
+		position: relative;
+		background: white;
+		padding: 60px 0 0;
+
+		@include screen-sm() {
+			width: 750px;
+			padding: 60px 0 0;
+		}
+
+		@include screen-md() {
+			width: 990px;
+			padding: 60px 0 30px;
+		}
+
+		@include screen-sm(max) {
+			margin: 0;
+			min-height: 100%;
+		}
+	}
+
+	&__header,
+	&__body {
+		margin: 0 auto;
+		padding: 15px;
+
+		@include screen-sm() {
+			margin: 0;
+		}
+
+		@include screen-md() {
+			padding: 15px 45px;
+		}
+	}
+
+	&__body {
+		overflow-x: auto;
+		overflow-y: hidden;
+
+		@include screen-sm() {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__close {
+		display: block;
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+
+			&::before {
+				background-position: -19px -46px;
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			background: url($path + 'img/icons.png') no-repeat -36px -46px;
+			width: 17px;
+			height: 17px;
+			top: 50%;
+			left: 50%;
+			margin: -9px 0 0 -9px;
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 1.8rem;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	&__table {
+		font-size: 1.4rem;
+		width: 100%;
+
+		td {
+			border: 1px solid $color-lightgray;
+			padding: 4px 5px;
+			white-space: nowrap;
+
+			@include screen-sm() {
+				white-space: normal;
+			}
+
+			&:first-child {
+				font-weight: bold;
+			}
+		}
+	}
+
+	&__table-active {
+		font-weight: bold;
+		background-color: $color-lightgray;
+	}
+}

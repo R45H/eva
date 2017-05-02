@@ -1,6 +1,6 @@
 /* Слайдер карточки объекта */
 $slider.slick({
-	autoplay: true,
+	autoplay: false,
 	dots: true,
 	customPaging : function(slider, i) {
 		var thumb = $(slider.$slides[i]).data('thumb');

@@ -8,6 +8,7 @@ $(function() {
 	@@include('blocks/tab-color/tab-color.js')
 	@@include('blocks/tab-size/tab-size.js')
 	@@include('blocks/sign/sign.js')
+	@@include('blocks/prop/prop.js')
 	@@include('blocks/select/select.js')
 	@@include('blocks/item/item.js')
 });

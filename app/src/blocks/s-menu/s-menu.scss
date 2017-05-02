@@ -16,6 +16,18 @@
 			margin-right: 0;
 		}
 
+		&._active {
+			cursor: default;
+
+			.menu {
+				// =====
+
+				&__link {
+					color: $color-second;
+				}
+			}
+		}
+
 		&_search {
 			display: inline-flex;
 			align-items: center;

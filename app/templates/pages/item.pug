@@ -4,11 +4,11 @@
 		.item__col.item__col_1
 			.slider.item__slider
 				div(data-thumb='img/card-1.jpg')
-					img(src='img/card-1.jpg')
+					.slider__img.slider__img_1
 				div(data-thumb='img/card-2.jpg')
-					img(src='img/card-2.jpg')
+					.slider__img.slider__img_2
 				div(data-thumb='img/card-3.jpg')
-					img(src='img/card-3.jpg')
+					.slider__img.slider__img_3
 
 		.item__col.item__col_2
 			.item__wrap
@@ -22,6 +22,7 @@
 					.tab-color.section__tab-color
 						p.tab-color__title Black romantic color
 						.tab-color__wrap
+							.tab-color__item.tab-color__item_white
 							.tab-color__item.tab-color__item_grey
 							.tab-color__item.tab-color__item_black
 							.tab-color__item.tab-color__item_pink
@@ -35,7 +36,7 @@
 						li.tab-size__item s
 						li.tab-size__item m
 						li.tab-size__item l
-					a.tab-size__info(href='#') Size information
+					a.tab-size__info(href='#' data-toggle='modal' data-target= '#prop') Size information
 					a.button.button_wide.tab-size__btn(href='#') add to cart
 					a#iBtn.btn-white.btn-white_wide.tab-size__white-btn(href='#')
 						span.btn-white__text Item overview

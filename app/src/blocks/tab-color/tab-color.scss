@@ -17,15 +17,9 @@
 		border-radius: 50%;
 		cursor: pointer;
 
-		&::before {
-			content: '';
-			display: block;
-			position: absolute;
-			border-radius: 50%;
-			top: 1px;
-			left: 1px;
-			bottom: 1px;
-			right: 1px;
+		&_white {
+			background: white;
+			border: 1px solid $color-gray;
 		}
 
 		&_grey {
@@ -41,10 +35,7 @@
 		}
 
 		&.selected {
-
-			&::before {
-				border: 1px solid white;
-			}
+			box-shadow: 0 0 7px $color-main;
 		}
 	}
 }
