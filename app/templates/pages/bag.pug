@@ -1,0 +1,71 @@
+.section
+	.container
+		h1.title.title_space shopping bag
+		table.bag.section__bag
+			thead
+				tr
+					td Product:
+					td(colspan='3') Description:
+					td Total:
+
+			tbody
+				tr
+					td
+						a(href='#')
+							img(src="img/card-1.jpg")
+					td
+						p.bag__title
+							a(href='#') Argus signature Newborn Sargasso
+						p.bag__desc Color: black
+						p.bag__desc Size: S
+
+					td
+						select.select
+							option(value="1") 1
+							option(value="2") 2
+							option(value="3") 3
+					td
+						button.basket
+					td 5000 руб.
+				tr
+					td
+						a(href='#')
+							img(src="img/card-2.jpg")
+					td
+						p.bag__title
+							a(href='#') Argus signature Newborn Sargasso
+						p.bag__desc Color: black
+						p.bag__desc Size: S
+
+					td
+						select.select
+							option(value="1") 1
+							option(value="2") 2
+							option(value="3") 3
+					td
+						button.basket
+					td 5000 руб.
+
+			tfoot
+				tr
+					td(colspan='2' rowspan='4')
+						p Promotional code
+						input.bag__input(placeholder='CHARMPROMO17')
+					td(colspan='3')  Order summary:
+				tr
+					td(colspan='2') Shipping:
+					td 5000 руб.
+				tr
+					td(colspan='2') Promotional sale:
+					td 5000 руб.
+				tr
+					td(colspan='2') Total cost:
+					td 5000 руб.
+
+		.row
+			.col-sm-6.col-sm-push-6.col-md-4.col-md-push-6
+				a.button.button_wide.bag__btn(href='#') Proceed to checkout
+
+			.col-sm-6.col-sm-pull-6.col-md-4.col-md-pull-2
+				a.btn-white.btn-white_bag.btn-white_wide.bag__btn(href='#')
+					span.btn-white__text Continue shopping

@@ -1,0 +1,31 @@
+.basket {
+	height: 40px;
+	width: 40px;
+	text-decoration: none;
+	outline: none;
+	border: 1px solid $color-lighter;
+	display: block;
+	position: relative;
+	background-color: transparent;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 21px;
+		height: 24px;
+		margin: -12px 0 0 -10px;
+		background: url($path + 'img/basket.png') no-repeat -21px 0;
+	}
+
+	&:hover,
+	&:focus {
+		border-color: $color-second;
+		
+		&::after {
+			background-position: 0 0;
+		}
+	}
+}

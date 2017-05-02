@@ -1,11 +1,239 @@
 .bag {
-	text-align: center;
 	width: 100%;
-}
 
-.bag h1 {
-	font-family: $font-main;
-	font-size: 1.6rem;
-	font-weight: bold;
-	text-transform: uppercase;
+	@include screen-sm(max) {
+		display: block;
+	}
+
+	tbody,
+	tfoot,
+	tbody tr,
+	tfoot tr,
+	tbody td,
+	tfoot td {
+
+		@include screen-sm(max) {
+			display: block;
+		}
+	}
+
+	&__title {
+		font-size: 1.8rem;
+		margin: 0 0 1.5em;
+	}
+
+	&__desc {
+		margin: 0 0 5px;
+	}
+
+	&__input {
+		padding: 5px;
+	}
+
+	&__btn {
+		margin: 0 auto 15px;
+		display: block;
+		max-width: 400px;
+	}
+
+	thead {
+
+		@include screen-sm(max) {
+			display: none;
+		}
+
+		td {
+			padding: 20px;
+			text-align: left;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+				text-align: right;
+			}
+		}
+
+		tr {
+			border-bottom: 1px solid $color-lighter;
+		}
+	}
+
+	tbody {
+
+		tr {
+			background: url($path + 'img/dots.png') repeat-x 0 100%;
+
+			&::after {
+
+				@include screen-sm(max) {
+					content: '';
+					display: table;
+					width: 100%;
+					clear: both;
+				}
+			}
+
+			&:first-child {
+
+				@include screen-sm(max) {
+					background: url($path + 'img/dots.png') repeat-x 0 0, url($path + 'img/dots.png') repeat-x 0 100%;
+				}
+			}
+		}
+
+		td {
+			padding: 20px;
+			text-align: left;
+
+			@include screen-sm(max) {
+				float: left;
+				width: 50%;
+			}
+
+			&:first-child {
+				padding-left: 0;
+				width: 100px;
+
+				@include screen-sm(max) {
+					width: 50%;
+				}
+
+				@include screen-xs(max) {
+					width: 40%;
+				}
+
+				img {
+					max-width: 100%;
+					max-height: 170px;
+
+					@include screen-sm(max) {
+						max-height: 450px;
+					}
+				}
+			}
+
+			&:nth-child(2) {
+				width: 60%;
+
+				@include screen-sm(max) {
+					width: 50%;
+					padding-left: 0;
+				}
+
+				@include screen-xs(max) {
+					width: 60%;
+					padding-right: 0;
+				}
+			}
+
+			&:nth-child(3) {
+
+				@include screen-sm(max) {
+					width: 35%;
+					padding-right: 7px;
+					padding-left: 0;
+					padding-top: 0;
+				}
+			}
+
+			&:nth-child(4) {
+
+				@include screen-sm(max) {
+					width: 15%;
+					padding-left: 7px;
+					padding-top: 0;
+				}
+
+				@include screen-xs(max) {
+					width: 25%;
+					padding-right: 0;
+				}
+			}
+
+			&:last-child {
+				padding-right: 0;
+				text-align: right;
+				white-space: nowrap;
+
+				@include screen-sm(max) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	tfoot {
+		vertical-align: top;
+
+		tr {
+
+			&:first-child {
+
+				td {
+					text-align: left;
+					padding-top: 30px;
+
+					@include screen-sm(max) {
+						padding: 20px 0;
+					}
+
+					&:first-child {
+
+						@include screen-sm(max) {
+							background: url($path + 'img/dots.png') repeat-x 0 100%;
+						}
+					}
+
+					&:last-child {
+						padding-left: 0;
+						text-transform: uppercase;
+					}
+				}
+			}
+
+			&:not(:first-child) {
+
+				@include screen-sm(max) {
+					display: table;
+					width: 100%;
+				}
+
+				td {
+
+					@include screen-sm(max) {
+						display: table-cell;
+					}
+				}
+			}
+
+			&:last-child {
+				font-weight: bold;
+			}
+		}
+
+		td {
+			padding: 5px 20px;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+				text-align: right;
+				white-space: nowrap;
+			}
+		}
+	}
+
+	.select__current {
+		height: 40px;
+
+		.select__text {
+			line-height: 40px;
+		}
+	}
 }

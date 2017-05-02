@@ -1,6 +1,5 @@
 .btn-white {
 	display: inline-block;
-	//background: url($path + 'img/overview.png') no-repeat 15px 50%;
 	height: 54px;
 	text-decoration: none;
 	border: 1px solid $color-lighter;
@@ -51,5 +50,21 @@
 
 	&_wide {
 		width: 100%;
+	}
+
+	&_bag {
+
+		.btn-white {
+			// =====
+
+			&__text {
+
+				&::before {
+					width: 21px;
+					height: 20px;
+					background: url($path + 'img/bag.png');
+				}
+			}
+		}
 	}
 }
