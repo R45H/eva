@@ -1,0 +1,56 @@
+.num {
+	position: relative;
+
+	&__input {
+		height: 40px;
+		width: 100%;
+		border: 1px solid $color-lighter;
+		padding: 8px 28px 8px 8px;
+	}
+
+	&__btn {
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		right: 0;
+		border: 1px solid $color-lighter;
+		cursor: pointer;
+		text-align: center;
+
+		&::after {
+			display: block;
+			font-size: 1.6rem;
+		}
+
+		&:hover,
+		&:focus {
+			background: $color-lighter;
+			color: white;
+		}
+
+		&:active {
+			background: $color-second;
+			color: white;
+		}
+
+		&_pos {
+			top: 0;
+			border-bottom: none;
+
+			&::after {
+				content: '+';
+				line-height: 19px;
+			}
+		}
+
+		&_neg {
+			top: 50%;
+
+			&::after {
+				content: '-';
+				line-height: 18px;
+			}
+		}
+	}
+}

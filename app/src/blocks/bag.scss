@@ -26,8 +26,11 @@
 		margin: 0 0 5px;
 	}
 
-	&__input {
-		padding: 5px;
+	&__num {
+
+		@include screen-xs() {
+			width: 75px;
+		}
 	}
 
 	&__btn {
@@ -226,14 +229,6 @@
 				text-align: right;
 				white-space: nowrap;
 			}
-		}
-	}
-
-	.select__current {
-		height: 40px;
-
-		.select__text {
-			line-height: 40px;
 		}
 	}
 }

@@ -11,4 +11,5 @@ $(function() {
 	@@include('blocks/prop/prop.js')
 	@@include('blocks/select/select.js')
 	@@include('blocks/item/item.js')
+	@@include('blocks/num/num.js')
 });

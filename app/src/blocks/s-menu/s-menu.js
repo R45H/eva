@@ -7,6 +7,7 @@ $sBtn.on('click', function() {
 	} else {
 		togSearch();
 	}
+	return false;
 });
 
 $(window).on('resize', function() {

@@ -4,9 +4,7 @@ $tabCol.on('click', function() {
 		$this = $(this),
 		active = 'selected';
 
-	if ($this.hasClass(active)) {
-		$this.removeClass(active);
-	} else {
+	if (!$this.hasClass(active)) {
 		$tabCol.removeClass(active);
 		$this.addClass(active);
 	}
