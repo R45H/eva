@@ -11,6 +11,8 @@
 		color: $color-gray;
 	}
 
+	@include input-autofill($color-gray, white);
+
 	&_wide {
 		width: 100%;
 	}

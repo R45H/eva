@@ -1,11 +1,15 @@
 .accord {
-	margin-top: 40px;
+
+	&__panel {
+		box-shadow: none;
+		margin-bottom: 20px;
+	}
 
 	&__head {
 		font-weight: 700;
 	}
 
-	&__panel {
-		box-shadow: none;
+	&__body {
+		margin-top: 10px;
 	}
 }

@@ -63,7 +63,7 @@ function togSearch() { // Показать / скрыть поиск мобил�
 			$body.addClass($boHid);
 		}
 	} else {
-		$body.toggleClass($boHid);
+		hideSearch();
 	}
 
 	if ($header.hasClass($hAhead)) {

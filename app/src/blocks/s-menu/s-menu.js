@@ -29,4 +29,10 @@ $(window).on('resize', function() {
 		}
 	}
 });
+
+$(document).on('click', function(e) {
+	if (!$(e.target).parents('.header').length) {
+		$sInp.hide(delay);
+	}
+});
 /* ========== */

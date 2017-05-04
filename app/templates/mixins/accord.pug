@@ -1,0 +1,9 @@
+mixin accord(data)
+	#accord.accord(class = attributes.class)
+		each val, index in data
+			.panel.accord__panel
+				.accord__head
+					a.accord__title(data-toggle='collapse', data-parent='#accord', href='#accord-' + index)= val.title
+				.panel-collapse.collapse(id='accord-' + index)
+					.accord__body
+						p= val.desc
