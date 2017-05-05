@@ -14,4 +14,11 @@ $slider.slick({
 		}
 	}]
 });
+
+$('.slider__img').imagezoomsl({
+	magnifycursor: 'url(../img/loop.cur), auto',
+	zoomrange: [1, 5],
+	magnifiereffectanimate: 'fadeIn',
+	innerzoom: true
+});
 /* ========== */
