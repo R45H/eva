@@ -1,5 +1,5 @@
 .banner {
-	background: url($path + 'img/banner.jpg') no-repeat 50% 10%;
+	background: no-repeat 50% 50%;
 	background-size: cover;
 	padding: 15em 0 1em;
 	display: block;
@@ -77,6 +77,17 @@
 			font-size: 2.4rem;
 			font-weight: 300;
 			text-shadow: 1px 1px 1px white;
+		}
+	}
+
+	&_img_1 {
+		background-image: url($path + 'img/banner.jpg');
+		background-position: 75% 10%;
+		background-size: auto 150%;
+
+		@include screen-xs() {
+			background-position: 50% 10%;
+			background-size: cover;
 		}
 	}
 
