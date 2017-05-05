@@ -5,13 +5,14 @@
 		position: relative;
 		list-style-type: none;
 		padding-left: 0;
-		margin: 0 0 25px;
+		margin: 0 0 15px;
 	}
 
 	&__title {
 		font-family: $font-main-cond;
 		font-weight: 300;
 		font-size: 1.6rem;
+		margin: 0;
 	}
 
 	&__item {
@@ -25,12 +26,8 @@
 		font-weight: 300;
 		user-select: none;
 		cursor: pointer;
-		margin-right: 15px;
+		margin: 7px 5px;
 		display: inline-block;
-
-		&:last-child {
-			margin-right: 0;
-		}
 
 		&.selected {
 			background: $color-lighter;

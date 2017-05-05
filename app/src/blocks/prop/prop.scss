@@ -24,25 +24,33 @@
 	&__header,
 	&__body {
 		margin: 0 auto;
-		padding: 15px;
 
 		@include screen-sm() {
 			margin: 0;
 		}
+	}
+
+	&__header {
+		padding: 0 15px 15px;
 
 		@include screen-md() {
-			padding: 15px 45px;
+			padding: 0 45px 15px;
 		}
 	}
 
 	&__body {
 		overflow-x: auto;
 		overflow-y: hidden;
+		padding: 15px;
 
 		@include screen-sm() {
 			display: flex;
 			justify-content: space-around;
 			flex-wrap: wrap;
+		}
+
+		@include screen-md() {
+			padding: 15px 45px;
 		}
 	}
 

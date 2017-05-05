@@ -6,6 +6,11 @@ footer.footer
 	+f-menu(fMenu)(class='footer__menu')
 
 	.footer__soc-wrap
-
 		each val in soc
 			+soc(val)(class='footer__soc')
+
+	.footer__copy
+		p All rights reserved © Lovely Eva
+		p Developed by
+			= ' '
+			a.footer__webcenter(href='http://webcenter.pro/' target='_blank') Webcenter.pro

@@ -12,7 +12,7 @@
 
 		@include screen-md() {
 			width: 940px;
-			padding: 60px 0 60px;
+			padding: 60px 0 45px;
 		}
 
 		@include screen-sm(max) {
@@ -29,6 +29,27 @@
 		@include screen-sm() {
 			max-width: none;
 			margin: 0;
+		}
+	}
+
+	&__header {
+		padding-bottom: 45px;
+
+		@include screen-sm() {
+			padding: 0 15px 15px;
+		}
+
+		@include screen-md() {
+			padding: 0 45px 15px;
+		}
+	}
+
+	&__body {
+
+		@include screen-sm() {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
 			padding: 15px;
 		}
 
@@ -72,15 +93,6 @@
 		text-align: center;
 		text-transform: uppercase;
 		margin: 0;
-	}
-
-	&__body {
-
-		@include screen-sm() {
-			display: flex;
-			justify-content: space-around;
-			flex-wrap: wrap;
-		}
 	}
 
 	&__dot {

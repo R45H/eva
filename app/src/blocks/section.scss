@@ -33,6 +33,7 @@
 
 		@include screen-sm() {
 			width: 33.333333%;
+			margin-bottom: 30px;
 		}
 
 		@include screen-md() {
@@ -42,11 +43,6 @@
 		@include screen-lg() {
 			width: 20%;
 		}
-	}
-
-	&__tab-color {
-		width: 150px;
-		margin: auto;
 	}
 
 	&__under-banner {

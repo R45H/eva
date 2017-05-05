@@ -2,12 +2,11 @@
 
 	&__title {
 		font-size: 1.2rem;
-		margin: 0 0 10px;
+		margin: 0;
 	}
 
 	&__wrap {
-		display: flex;
-		justify-content: space-around;
+		text-align: center;
 	}
 
 	&__item {
@@ -17,6 +16,8 @@
 		border-radius: 50%;
 		cursor: pointer;
 		box-shadow: 0 0 4px $color-main;
+		display: inline-block;
+		margin: 10px;
 
 		&_white {
 			background: white;
