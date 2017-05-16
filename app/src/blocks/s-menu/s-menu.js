@@ -30,7 +30,7 @@ $(window).on('resize', function() {
 	}
 });
 
-$(document).on('click', function(e) {
+$(document).on('click', function(e) { // Скрытие десктопного меню при клике вне шапки
 	if (!$(e.target).parents('.header').length) {
 		$sInp.hide(delay);
 	}

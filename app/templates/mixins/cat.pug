@@ -1,6 +1,7 @@
 mixin cat(data)
 	.cat(class = attributes.class)
 		a.cat__img(href='#' style='background-image: url(img/' + data.img + ')')
-		h4.cat__title= data.title
-		p.cat__desc= data.desc
-		a.cat__btn(href='#') Shop now
+		.cat__wrap
+			h4.cat__title= data.title
+			p.cat__desc= data.desc
+			a.cat__btn(href='#') Shop now

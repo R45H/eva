@@ -20,6 +20,8 @@
 		margin: 0 auto 3em;
 		padding: 0 15px;
 		max-width: 500px;
+		display: flex;
+		flex-direction: column;
 
 		@include screen-sm() {
 			margin: 0 0 3em;
