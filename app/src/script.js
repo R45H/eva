@@ -9,6 +9,7 @@ $(function() {
 	@@include('blocks/tab-size/tab-size.js')
 	@@include('blocks/sign/sign.js')
 	@@include('blocks/prop/prop.js')
+	@@include('blocks/disc/disc.js')
 	@@include('blocks/select/select.js')
 	@@include('blocks/item/item.js')
 	@@include('blocks/num/num.js')

@@ -173,3 +173,23 @@
 					td  
 					td  
 					td
+
+// Модалка входа
+.modal.fade.disc#disc
+	.modal-dialog.disc__wrap
+		.disc__header
+			.container-fluid
+				.row
+					.col-sm-8
+						h4.disc__title Дарим скидку 15% на первый заказ
+			.disc__close(data-dismiss="modal")
+		.disc__body
+			.container-fluid
+				.row
+					.col-sm-8
+						p.disc__desc Узнавайте первыми о новых коллекциях и скидках.
+						form.inline-form
+							.inline-form__item
+								input.input.input_wide(type="text" placeholder="Ваш E-mail")
+							.inline-form__item.inline-form__item_sm
+								input.button.button_wide.button_pink(type="submit" value="Отправить")

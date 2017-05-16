@@ -1,0 +1,31 @@
+.inline-form {
+
+	@include screen-xs() {
+		display: table;
+		width: 100%;
+	}
+
+	&__item {
+		margin-bottom: 15px;
+
+		@include screen-xs() {
+			display: table-cell;
+			vertical-align: bottom;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+
+			@include screen-xs() {
+				padding-left: 15px;
+			}
+		}
+
+		&_sm {
+
+			@include screen-xs() {
+				width: 40%;
+			}
+		}
+	}
+}
