@@ -15,10 +15,9 @@ include ../mixins/insta
 .section
 	.container-fluid
 		h3.title.title_big.title_space Categories
-		.row
+		.section__cat-wrap
 			each val in cat
-				.col-sm-4
-					+cat(val)(class='section__cat')
+				+cat(val)(class='section__cat')
 
 .section
 	.container
