@@ -1,0 +1,11 @@
+.insta {
+	text-align: center;
+
+	&__img {
+		background: no-repeat 50% 50%;
+		background-size: cover;
+		padding-bottom: 100%;
+		margin-bottom: 15px;
+		display: block;
+	}
+}

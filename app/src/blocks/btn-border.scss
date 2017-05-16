@@ -1,0 +1,21 @@
+.btn-border {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.6rem;
+	display: inline-block;
+	color: $color-black;
+	border: 2px solid $color-black;
+	padding: 10px 15px;
+
+	&:hover,
+	&:focus {
+		color: $color-second ;
+		border: 2px solid $color-second;
+		text-decoration: none;
+	}
+
+	.fa {
+		font-weight: bold;
+		margin-right: 10px;
+	}
+}

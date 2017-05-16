@@ -1,5 +1,6 @@
 include ../mixins/cat
 include ../mixins/links
+include ../mixins/insta
 
 .section
 	.container-fluid
@@ -18,3 +19,10 @@ include ../mixins/links
 			each val in cat
 				.col-sm-4
 					+cat(val)(class='section__cat')
+
+.section
+	.container
+		h3.title.title_big.title_space Super girls choice Lovely Eva
+		.slider
+			each val in insta
+				+insta(val)(class='slider__insta')
