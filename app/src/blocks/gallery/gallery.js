@@ -4,7 +4,7 @@ $slider.slick({
 	dots: true,
 	customPaging : function(slider, i) {
 		var thumb = $(slider.$slides[i]).data('thumb');
-		return '<div class="slider__thumb" style="background-image: url('+thumb+');"></div>';
+		return '<div class="gallery__thumb" style="background-image: url('+thumb+');"></div>';
 	},
 
 	responsive: [{
@@ -15,7 +15,7 @@ $slider.slick({
 	}]
 });
 
-$('.slider__img').imagezoomsl({
+$('.gallery__img').imagezoomsl({
 	magnifycursor: 'url(../img/loop.cur), auto',
 	zoomrange: [1, 5],
 	magnifiereffectanimate: 'fadeIn',
