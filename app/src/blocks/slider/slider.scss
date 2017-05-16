@@ -1,24 +1,66 @@
 .slider {
-	background: $color-lighter;
 
 	&__insta {
-		margin: 0 15px;
+		outline: none;
+
+		@include screen-xs() {
+			margin: 0 15px;
+		}
 	}
 
 	.slick-list {
-		margin: 0 30px;
+
+		@include screen-xs() {
+			margin: 0 40px;
+		}
 	}
 
-	.slick-prev,
-	.slick-next {
+	&__prev,
+	&__next {
+		position: absolute;
+		width: 55px;
+		height: 46px;
+		bottom: 0;
+		background-color: white;
+		border: none;
+		color: $color-main;
+		padding: 0;
+		z-index: 1;
 
+		@include screen-xs() {
+			bottom: auto;
+			top: 0;
+			height: 100%;
+		}
+
+		&::before {
+			font-family: $font-fa;
+			font-size: 4rem;
+			line-height: 1;
+
+			@include screen-xs() {
+				font-size: 6rem;
+			}
+		}
+
+		&:hover {
+			color: $color-second;
+		}
 	}
 
-	.slick-prev {
+	&__prev {
+		left: -15px;
 
+		&::before {
+			content: '\f104';
+		}
 	}
 
-	.slick-next {
+	&__next {
+		right: -15px;
 
+		&::before {
+			content: '\f105';
+		}
 	}
 }
