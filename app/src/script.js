@@ -7,6 +7,7 @@ $(function() {
 	@@include('blocks/gallery/gallery.js')
 	@@include('blocks/tab-color/tab-color.js')
 	@@include('blocks/tab-size/tab-size.js')
+	@@include('blocks/tab-shorts/tab-shorts.js')
 	@@include('blocks/sign/sign.js')
 	@@include('blocks/prop/prop.js')
 	@@include('blocks/disc/disc.js')

@@ -1,0 +1,10 @@
+mixin tab-size
+	.tab-size(class= attributes.class)
+		p.item__title Choose your size:
+		ul.tab-size__wrap
+			each val, index in tabSize
+				if index == 0
+					li.tab-size__item.selected= val.size
+				else
+					li.tab-size__item= val.size
+		a.tab-size__info(href='#' data-toggle='modal' data-target= '#prop') Size information

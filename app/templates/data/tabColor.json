@@ -1,0 +1,20 @@
+{
+	"tabColor": [
+		{
+			"color": "white",
+			"name": "White color"
+		},
+		{
+			"color": "#afbece",
+			"name": "Blue color"
+		},
+		{
+			"color": "black",
+			"name": "Black color"
+		},
+		{
+			"color": "#ffc1c1",
+			"name": "Pink color"
+		}
+	]
+}

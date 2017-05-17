@@ -8,13 +8,6 @@
 		margin: 0 0 15px;
 	}
 
-	&__title {
-		font-family: $font-main-cond;
-		font-weight: 300;
-		font-size: 1.6rem;
-		margin: 0;
-	}
-
 	&__item {
 		font-family: $font-main;
 		border: 1px solid $color-lighter;
@@ -42,37 +35,5 @@
 		text-align: center;
 		text-decoration: underline;
 		display: inline-block;
-		margin-bottom: 25px;
-	}
-
-	&__btn {
-		margin-bottom: 10px;
-	}
-
-	&__white-btn {
-
-		@include screen-sm() {
-			display: none;
-		}
-	}
-
-	&__desc {
-		display: none;
-
-		@include screen-sm() {
-			font-family: $font-main;
-			font-weight: normal;
-			font-size: 1.4rem;
-			display: block;
-			margin: 15px 0 10px;
-		}
-	}
-
-	&__overview {
-		display: none;
-		padding: 15px;
-		border: 1px solid $color-lighter;
-		border-top: 0;
-		font-size: 1.4rem;
 	}
 }

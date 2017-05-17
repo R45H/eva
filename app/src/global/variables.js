@@ -21,12 +21,13 @@ var
 	$select = $('.select'), // Выпадающие списки
 	$tabCol = $(".tab-color__item"), // Табы с цветами
 	$tabSize = $(".tab-size__item"), // Табы с размерами
+	$tabShorts = $(".tab-shorts__item"), // Табы с трусиками
 	$slider = $(".gallery"), // Слайдер в карточке объекта
 	$simpSlider = $(".slider"), // Обычный слайдер
 	$iDesc = $('.item__desc'), // Описание в карточке объекта
 	$iBtn = $('#iBtn'), // Кнопка для раскрытия описания мобильной версии в карточке объекта
 	iBtnAct = 'btn-white_active', // Класс активной белой кнопки
-	iView = 'tab-size__overview', // Класс мобильного описания
+	iView = 'item__overview', // Класс мобильного описания
 	$num = $('.num__input'), // Поле ввода типа number
 	$nBtn = $('.num__btn'); // Кнопка у поля ввода типа number
 /* ========== */

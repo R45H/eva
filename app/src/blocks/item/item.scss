@@ -83,11 +83,41 @@
 		}
 	}
 
-	&__tab-size {
-		margin-bottom: 30px;
+	&__btn {
+		margin-bottom: 10px;
+	}
+
+	&__white-btn {
 
 		@include screen-sm() {
-			margin-bottom: 0;
+			display: none;
 		}
+	}
+
+	&__sm-desc {
+		display: none;
+
+		@include screen-sm() {
+			font-family: $font-main;
+			font-weight: normal;
+			font-size: 1.4rem;
+			display: block;
+			margin: 15px 0 10px;
+		}
+	}
+
+	&__overview {
+		display: none;
+		padding: 15px;
+		border: 1px solid $color-lighter;
+		border-top: 0;
+		font-size: 1.4rem;
+	}
+
+	&__title {
+		font-family: $font-main-cond;
+		font-weight: 500;
+		font-size: 1.6rem;
+		margin: 0;
 	}
 }

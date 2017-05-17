@@ -1,0 +1,10 @@
+mixin tab-color
+	.tab-color(class= attributes.class)
+		h3.item__title Choose your color
+		.tab-color__wrap
+			each val, index in tabColor
+				if index == 0
+					.tab-color__item.selected(style="background-color: " + val.color)
+				else
+					.tab-color__item(style="background-color: " + val.color)
+		p.tab-color__desc Black romantic color

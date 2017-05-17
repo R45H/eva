@@ -1,0 +1,6 @@
+mixin tab-shorts
+	.tab-shorts(class= attributes.class)
+		p.item__title Choose your shorts:
+		ul.tab-shorts__wrap
+			each val, index in tabShorts
+				li.tab-shorts__item(style="background-image: url(img/" + val.image + ");")
