@@ -60,6 +60,7 @@
 
 				@include screen-md() {
 					background-color: transparent;
+					outline: 2px solid $color-lighter;
 				}
 			}
 		}
