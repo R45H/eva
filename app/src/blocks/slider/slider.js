@@ -18,14 +18,17 @@ $simpSlider.slick({
 			settings: {
 				slidesToShow: 3,
 				slidesToScroll: 3,
-				autoplay: true
+				autoplay: true,
+				autoplaySpeed: 10000
 			}
 		},
 		{
 			breakpoint: 992,
 			settings: {
 				slidesToShow: 4,
-				slidesToScroll: 4
+				slidesToScroll: 4,
+				autoplay: true,
+				autoplaySpeed: 10000
 			}
 		}
 	]

@@ -1,6 +1,7 @@
+include ../mixins/card
+
 .section
 	.item
-
 		.item__col.item__col_1
 			.gallery.item__gallery
 				div(data-thumb='img/card-1.jpg')
@@ -46,3 +47,10 @@
 					p.tab-size__desc Orders are shipped within 24 hours
 						br
 						| Shipping is by courier company
+
+.section
+	.container
+		h3.title.title_big.title_space You might interested
+		.slider.section__slider
+			each item in card
+				+card(item)(class='slider__item')

@@ -1,5 +1,5 @@
 mixin card(data)
-	a.card(href= data.link)
+	a.card(href= data.link class= attributes.class)
 		.card__img(style='background-image: url(img/' + data.img + ')')
 		.card__i
 			h4.card__title= data.title

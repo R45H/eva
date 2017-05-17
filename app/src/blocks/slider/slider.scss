@@ -1,13 +1,5 @@
 .slider {
 
-	&__insta {
-		outline: none;
-
-		@include screen-xs() {
-			margin: 0 15px;
-		}
-	}
-
 	.slick-list {
 
 		@include screen-xs() {
@@ -61,6 +53,23 @@
 
 		&::before {
 			content: '\f105';
+		}
+	}
+
+	&__item {
+		outline: none;
+
+		@include screen-xs() {
+			margin: 0 15px;
+		}
+
+		.card__i {
+
+			@include screen-xs(max) {
+				margin-left: 40px;
+				margin-right: 40px;
+				text-align: center;
+			}
 		}
 	}
 }
