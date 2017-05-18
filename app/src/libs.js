@@ -5,6 +5,7 @@
 @@include('../libs/jquery.maskedinput/dist/jquery.maskedinput.js')
 @@include('../libs/imagezoomsl/zoomsl-3.0.js')
 @@include('../libs/masonry/dist/masonry.pkgd.js')
+@@include('../libs/magnific-popup/dist/jquery.magnific-popup.js')
 
 @@include('../libs/jquery-ui/ui/version.js')
 @@include('../libs/jquery-ui/ui/safe-active-element.js')
