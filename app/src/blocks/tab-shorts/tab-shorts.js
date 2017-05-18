@@ -1,4 +1,4 @@
-/* Табы размера */
+/* Табы дополнительного товара */
 $tabShorts.on('click', function() {
 	var
 		$this = $(this),
