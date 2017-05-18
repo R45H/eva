@@ -17,4 +17,5 @@ $(function() {
 	@@include('blocks/slider/slider.js')
 	@@include('blocks/shooting/shooting.js')
 	@@include('blocks/img-popup/img-popup.js')
+	@@include('blocks/cert/cert.js')
 });
