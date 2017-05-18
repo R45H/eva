@@ -15,4 +15,5 @@ $(function() {
 	@@include('blocks/item/item.js')
 	@@include('blocks/num/num.js')
 	@@include('blocks/slider/slider.js')
+	@@include('blocks/shooting/shooting.js')
 });

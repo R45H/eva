@@ -29,7 +29,8 @@ var
 	iBtnAct = 'btn-white_active', // Класс активной белой кнопки
 	iView = 'item__overview', // Класс мобильного описания
 	$num = $('.num__input'), // Поле ввода типа number
-	$nBtn = $('.num__btn'); // Кнопка у поля ввода типа number
+	$nBtn = $('.num__btn'), // Кнопка у поля ввода типа number
+	$shoot = $('.shooting'); // Контейнер адаптивных плиток
 /* ========== */
 
 /* ФУНКЦИИ */
