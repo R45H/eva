@@ -1,0 +1,10 @@
+mixin banner(data, num)
+	each val, index in data
+		if index == num
+			.banner(class= val.mainClass)
+				.banner__wrap(class= val.wrapClass)
+					h1.banner__title= val.title
+					if val.subtitle
+						h2.banner__subtitle= val.subtitle
+					if val.desc
+						p.banner__desc= val.desc

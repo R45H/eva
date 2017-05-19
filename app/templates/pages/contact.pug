@@ -1,8 +1,9 @@
+include ../mixins/banner
+
 .section
 	.container-fluid
-		.banner.banner_contact
-			.banner__wrap.banner__wrap_space
-				h1.banner__title contact
+		+banner(banner, 1)
+
 .section
 	p.section__under-banner.text Please e-mail us at
 		= ' '

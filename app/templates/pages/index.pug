@@ -1,16 +1,12 @@
 include ../mixins/cat
 include ../mixins/links
 include ../mixins/insta
+include ../mixins/banner
 
 .section
 	.container-fluid
 		+links(menu)(class='visible-xs visible-sm')
-
-		.banner.banner_img_1
-			.banner__wrap
-				h1.banner__title Spring
-				h2.banner__subtitle New collection
-				p.banner__desc New collections with fresh scents of springs
+		+banner(banner, 0)
 
 .section
 	.container-fluid

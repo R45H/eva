@@ -1,0 +1,15 @@
+{
+	"banner": [
+		{
+			"title": "Spring",
+			"subtitle": "New collection",
+			"desc": "New collections with fresh scents of springs",
+			"mainClass": "banner_img_1"
+		},
+		{
+			"title": "Contact",
+			"mainClass": "banner_contact",
+			"wrapClass": "banner__wrap_space"
+		}
+	]
+}
