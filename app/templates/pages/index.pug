@@ -2,11 +2,15 @@ include ../mixins/cat
 include ../mixins/links
 include ../mixins/insta
 include ../mixins/banner
+include ../mixins/video
 
 .section
 	.container-fluid
 		+links(menu)(class='visible-xs visible-sm')
-		+banner(banner, 0)
+
+	.container
+		h1.hidden-title Lovely Eva
+		+video('dKIRh-B55yw')
 
 .section
 	.container-fluid

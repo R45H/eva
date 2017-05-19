@@ -1,0 +1,49 @@
+.half {
+	margin: 0 -15px;
+
+	@include screen-sm() {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	&__item {
+		padding: 0 15px;
+
+		@include screen-sm() {
+			width: 50%;
+			max-width: 585px;
+		}
+
+		&:first-child {
+
+			@include screen-sm() {
+				order: 1;
+			}
+		}
+
+		&:nth-child(2) {
+			margin-top: 30px;
+
+			@include screen-sm() {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&_full {
+
+		.half {
+			// =====
+
+			&__item {
+
+				@include screen-sm() {
+					width: 100%;
+					max-width: 1170px;
+				}
+			}
+		}
+	}
+}
