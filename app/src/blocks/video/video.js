@@ -1,5 +1,5 @@
 /* Видео */
-$('.video').each(function() {
+$video.each(function() {
 	var item = $(this);
 
 	if (!item.attr('data-id')) return;

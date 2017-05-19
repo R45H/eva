@@ -12,14 +12,11 @@
 	font-family: $font-main;
 	white-space: nowrap;
 
-	&:hover {
-		background-color: lighten($color-black, 14%);
-	}
-
 	&:hover,
 	&:focus {
 		color: white;
 		text-decoration: none;
+		background-color: lighten($color-black, 14%);
 	}
 
 	&:active {

@@ -7,9 +7,9 @@
 		padding: 60px 0 20px;
 
 		@include screen-sm() {
-			background: white url($path + 'img/discount-bg.png') no-repeat 100% 100%;
 			width: 750px;
 			padding: 60px 0 30px;
+			background: white no-repeat 100% 100%;
 		}
 
 		@include screen-md() {
@@ -20,6 +20,20 @@
 		@include screen-sm(max) {
 			margin: 0;
 			min-height: 100%;
+		}
+
+		&_img_1 {
+
+			@include screen-sm() {
+				background-image: url($path + 'img/discount-bg.png');
+			}
+		}
+
+		&_img_2 {
+
+			@include screen-sm() {
+				background-image: url($path + 'img/contact-bg.jpg');
+			}
 		}
 	}
 
