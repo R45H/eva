@@ -1,5 +1,5 @@
 /* Обработка сертификата */
-$cFirst.focus();
+$cSum.focus();
 
 $cSum.on('input', function() {
 	if (this.value.match(/[^0-9]/g)) {

@@ -8,7 +8,15 @@
 				br
 				|Сможете его мгновенно переслать получателю или распечатать как красивый купон и вручить лично.
 			.cert__wrap
-				img.cert__img(src='img/certificate.jpg')
-				textarea.input.cert__text(placeholder='Текст')
-				input.input.cert__sum(type='text' placeholder='Сумма')
-				input.button.cert__btn(type='submit' value='Отправить')
+				.cert__mid
+					form
+						h2.cert__title Подарочный сертификат на сумму
+						input.input.cert__sum(type='text')
+						p.cert__title в магазине боди и белья Lovely Eva
+						input.button.button_pink.cert__btn(type='submit' value='Отправить')
+				.cert__bot
+					.cert__item
+						a.cert__link(href='/') www.lovelyeva.ru
+					.cert__item VK / Instagram:
+						= ' '
+						a.cert__link(href='/' target='_blank') @o_lovely_eva
