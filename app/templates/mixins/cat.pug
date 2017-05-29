@@ -1,6 +1,7 @@
 mixin cat(data)
-	.cat(class = attributes.class)
-		a.cat__img(href='#' style='background-image: url(img/' + data.img + ')')
+	.cat(class= attributes.class)
+		.cat__img-wrap
+			a.cat__img(href='#' style='background-image: url(img/' + data.img + ')')
 		.cat__wrap
 			h4.cat__title= data.title
 			p.cat__desc= data.desc

@@ -8,3 +8,4 @@ npm-debug.log
 !/app/sprites/.gitkeep
 /dist/
 /temp/
+/ftp/
