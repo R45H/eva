@@ -1,6 +1,7 @@
 mixin insta(data)
 	.insta(class= attributes.class)
-		a.insta__img(href=data.link style="background-image: url('img/" + data.img + "');" target="_blank")
+		a.insta__img-wrap(href=data.link target = "_blank")
+			.insta__img(style="background-image: url('img/" + data.img + "');")
 		a.btn-border(href=data.link target="_blank")
 			i.fa.fa-instagram
 			| Instagram

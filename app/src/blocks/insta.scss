@@ -1,11 +1,38 @@
 .insta {
 	text-align: center;
 
+	&__img-wrap {
+		overflow: hidden;
+		position: relative;
+		display: block;
+		margin-bottom: 15px;
+	}
+
 	&__img {
 		background: no-repeat 50% 50%;
 		background-size: cover;
 		padding-bottom: 100%;
-		margin-bottom: 15px;
 		display: block;
+		transition: $duration ease;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: transparent;
+			transition: $duration ease;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+
+			&::after {
+				background: $color-fog-dark;
+				transition: none;
+			}
+		}
 	}
 }

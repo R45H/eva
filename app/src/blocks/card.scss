@@ -40,15 +40,18 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			align-items: center;
-			background-color: rgba(255, 255, 255, .8);
+			text-align: center;
+			background-color: $color-fog-bright;
 			opacity: 0;
 			transition: $duration / 2 ease-in;
 			color: $color-main;
 			padding: 10px;
+		}
 
-			&:hover,
-			&:focus {
+		&:hover,
+		&:focus {
+
+			@include screen-sm() {
 				color: $color-main;
 				text-decoration: none;
 			}

@@ -1,6 +1,14 @@
 .cat {
 	width: 100%;
 	text-align: center;
+	overflow: hidden;
+
+	&__img-wrap {
+		overflow: hidden;
+		margin: 0 0 1.5em;
+		position: relative;
+		display: block;
+	}
 
 	&__img {
 		display: block;
@@ -8,7 +16,27 @@
 		padding-bottom: 100%;
 		background: no-repeat 50% 50%;
 		background-size: cover;
-		margin: 0 0 1.5em;
+		transition: $duration ease;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: transparent;
+			transition: $duration ease;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+
+			&::after {
+				background: $color-fog-dark;
+				transition: none;
+			}
+		}
 	}
 
 	&__wrap {

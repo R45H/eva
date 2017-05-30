@@ -18,7 +18,7 @@ $slider.slick({
 if (window.innerWidth > point) {
 
 	$('.gallery__img').imagezoomsl({
-		magnifycursor: 'url(../img/loop.cur), auto',
+		magnifycursor: 'url(../img/loop.png) 12 12, auto',
 		zoomrange: [1, 5],
 		magnifiereffectanimate: 'fadeIn',
 		innerzoom: true
