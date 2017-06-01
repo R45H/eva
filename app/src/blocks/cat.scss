@@ -30,11 +30,17 @@
 		}
 
 		&:hover {
-			transform: scale(1.1);
+
+			@include screen-sm() {
+				transform: scale(1.1);
+			}
 
 			&::after {
-				background: $color-fog-dark;
-				transition: none;
+
+				@include screen-sm() {
+					background: $color-fog-dark;
+					transition: none;
+				}
 			}
 		}
 	}

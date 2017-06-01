@@ -6,3 +6,13 @@
 	color: $color-main;
 	display: block;
 }
+
+a.sm-title {
+	border-bottom: 1px solid transparent;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		border-bottom-color: $color-second;
+	}
+}

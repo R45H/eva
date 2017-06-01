@@ -3,14 +3,14 @@
 	color: white;
 	display: inline-block;
 	border-radius: 50%;
-	height: 1.7em;
-	width: 1.7em;
-	line-height: 1.8;
+	height: 2em;
+	width: 2em;
+	line-height: 2;
 	text-align: center;
 
 	&:hover,
 	&:focus {
-		background-color: $color-second;
+		background-color: $color-gray;
 		color: white;
 	}
 }

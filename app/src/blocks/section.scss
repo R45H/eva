@@ -88,4 +88,12 @@
 	&__slider {
 		margin-bottom: 4rem;
 	}
+
+	&__links {
+		margin: 1em 0;
+
+		@include screen-md() {
+			display: none;
+		}
+	}
 }

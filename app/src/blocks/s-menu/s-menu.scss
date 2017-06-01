@@ -24,6 +24,11 @@
 
 				&__link {
 					color: $color-second;
+
+					&:hover,
+					&:focus {
+						border-bottom: none;
+					}
 				}
 			}
 		}
@@ -48,6 +53,7 @@
 					&:hover,
 					&:focus {
 						background-position: -57px -26px;
+						border-bottom: none;
 					}
 				}
 			}
@@ -68,6 +74,7 @@
 					&:hover,
 					&:focus {
 						background-position: -21px 0px;
+						border-bottom: none;
 					}
 				}
 			}
@@ -104,6 +111,12 @@
 		color: $color-main;
 		text-transform: uppercase;
 		display: block;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			border-bottom: 1px solid $color-second;
+		}
 	}
 
 	&__search {

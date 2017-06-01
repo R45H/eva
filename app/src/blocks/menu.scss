@@ -11,13 +11,17 @@
 		}
 
 		&._active {
-			cursor: default;
 
 			.menu {
 				// =====
 
 				&__link {
 					color: $color-second;
+
+					&:hover,
+					&:focus {
+						border-bottom: none;
+					}
 				}
 			}
 		}
@@ -29,5 +33,11 @@
 		color: $color-main;
 		text-transform: uppercase;
 		display: block;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			border-bottom: 1px solid $color-second;
+		}
 	}
 }

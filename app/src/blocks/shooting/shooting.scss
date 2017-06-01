@@ -124,16 +124,22 @@
 				&__img {
 
 					&::before {
-						opacity: 1;
-						transition: none;
+
+						@include screen-sm() {
+							opacity: 1;
+							transition: none;
+						}
 					}
 				}
 
 				&__title,
 				&__desc {
-					color: $color-main;
-					text-shadow: none;
-					transition: none;
+
+					@include screen-sm() {
+						color: $color-main;
+						text-shadow: none;
+						transition: none;
+					}
 				}
 			}
 		}

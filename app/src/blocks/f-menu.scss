@@ -8,7 +8,7 @@
 
 		@include screen-sm() {
 			display: inline-block;
-			margin-right: 2em;
+			margin: .5em 2em .5em 0;
 		}
 
 		&:first-child {
@@ -23,13 +23,17 @@
 		}
 
 		&._active {
-			cursor: default;
 
 			.f-menu {
 				// =====
 
 				&__link {
 					color: $color-second;
+
+					&:hover,
+					&:focus {
+						border-bottom: none;
+					}
 				}
 			}
 		}
@@ -39,5 +43,11 @@
 		font-family: $font-second;
 		color: $color-main;
 		font-size: 1.3rem;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			border-bottom: 1px solid $color-second;
+		}
 	}
 }
