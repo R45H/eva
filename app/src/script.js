@@ -11,6 +11,7 @@ $(function() {
 	@@include('blocks/sign/sign.js')
 	@@include('blocks/prop/prop.js')
 	@@include('blocks/disc/disc.js')
+	@@include('blocks/contact/contact.js')
 	@@include('blocks/select/select.js')
 	@@include('blocks/item/item.js')
 	@@include('blocks/num/num.js')

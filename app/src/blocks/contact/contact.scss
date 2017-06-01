@@ -1,0 +1,103 @@
+.contact {
+
+	&__wrap {
+		position: relative;
+		background: white;
+		background-size: contain;
+		padding: 60px 0 20px;
+
+		@include screen-sm() {
+			width: 750px;
+			padding: 60px 0 30px;
+			background: white url($path + 'img/contact-bg.jpg') no-repeat 100% 100%;
+		}
+
+		@include screen-md() {
+			width: 800px;
+			padding: 60px 0 45px;
+		}
+
+		@include screen-sm(max) {
+			margin: 0;
+			min-height: 100%;
+		}
+	}
+
+	&__header,
+	&__body {
+		max-width: 500px;
+		margin: 0 auto;
+
+		@include screen-sm() {
+			max-width: none;
+			margin: 0;
+		}
+	}
+
+	&__header {
+		padding-bottom: 45px;
+
+		@include screen-sm() {
+			padding: 0 15px 15px;
+		}
+
+		@include screen-md() {
+			padding: 0 35px 15px;
+		}
+	}
+
+	&__body {
+
+		@include screen-sm() {
+			padding: 15px;
+		}
+
+		@include screen-md() {
+			padding: 15px 35px;
+		}
+	}
+
+	&__close {
+		display: block;
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+
+			&::before {
+				background-position: -19px -46px;
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			background: url($path + 'img/icons.png') no-repeat -36px -46px;
+			width: 17px;
+			height: 17px;
+			top: 50%;
+			left: 50%;
+			margin: -9px 0 0 -9px;
+		}
+	}
+
+	&__title {
+		font-weight: 300;
+		color: $color-second;
+		margin: 0 0 .5em;
+		font-size: 3rem;
+
+		@include screen-sm() {
+			font-size: 4.8rem;
+		}
+	}
+
+	&__desc {
+		margin-bottom: 4em;
+	}
+}

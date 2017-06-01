@@ -15,4 +15,5 @@ $disc.on('show.bs.modal', function() { // Фикс прыгающей шапки
 		$body.addClass($boHid);
 	}
 });
+
 /* ========== */

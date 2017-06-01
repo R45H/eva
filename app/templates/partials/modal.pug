@@ -178,36 +178,39 @@
 .modal.fade.disc#disc
 	.modal-dialog.disc__wrap.disc__wrap_img_1
 		.disc__header
-			.container-fluid
-				.row
-					.col-sm-8
-						h4.disc__title Дарим скидку 15% на первый заказ
 			.disc__close(data-dismiss="modal")
 		.disc__body
 			.container-fluid
 				.row
 					.col-sm-8
-						p.disc__desc Узнавайте первыми о новых коллекциях и скидках.
+						h4.disc__title Скидка 15%
+						p.disc__desc в магазине боди и белья Lovely Eva
 						form.inline-form
 							.inline-form__item
 								input.input.input_wide(type="text" placeholder="Ваш E-mail")
 							.inline-form__item.inline-form__item_sm
 								input.button.button_wide.button_pink(type="submit" value="Отправить")
+			.disc__link-wrap
+				p.disc__link
+					a(href='/') www.lovelyeva.ru
+				p.disc__link VK / Instagram:
+					= ' '
+					a(href='#' target='_blank') @o_lovely_eva
 
 // Модалка связи
-.modal.fade.disc#contact
-	.modal-dialog.disc__wrap.disc__wrap_img_2
-		.disc__header
+.modal.fade.contact#contact
+	.modal-dialog.contact__wrap
+		.contact__header
 			.container-fluid
 				.row
 					.col-sm-8
-						h4.disc__title Оставайтесь на связи
-			.disc__close(data-dismiss="modal")
-		.disc__body
+						h4.contact__title Оставайтесь на связи
+			.contact__close(data-dismiss="modal")
+		.contact__body
 			.container-fluid
 				.row
 					.col-sm-8
-						p.disc__desc Чтобы первыми получить доступ к частным продажам и эксклюзивным скидкам!
+						p.contact__desc Чтобы первыми получить доступ к частным продажам и эксклюзивным скидкам!
 						form.inline-form
 							.inline-form__item
 								input.input.input_wide(type="text" placeholder="Ваш E-mail")
