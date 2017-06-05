@@ -25,7 +25,7 @@
 		width: 50px;
 
 		@include screen-sm() {
-			width: 100px;
+			width: 110px;
 		}
 
 		@include screen-sm(max) {
