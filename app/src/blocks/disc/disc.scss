@@ -2,22 +2,19 @@
 
 	&__wrap {
 		position: relative;
-		padding: 60px 0 110px;
-		background: white url($path + 'img/discount-bg.jpg') no-repeat 100% 100%;
-		background-size: cover;
-
-		@include screen-xs() {
-			padding: 60px 0 70px;
-		}
+		background: white;
+		background-size: contain;
+		padding: 60px 0 20px;
 
 		@include screen-sm() {
 			width: 750px;
-			padding: 120px 0 120px;
+			padding: 60px 0 30px;
+			background: white url($path + 'img/discount-bg.png') no-repeat 100% 100%;
 		}
 
 		@include screen-md() {
 			width: 800px;
-			padding: 140px 0 140px;
+			padding: 60px 0 45px;
 		}
 
 		@include screen-sm(max) {
@@ -34,6 +31,18 @@
 		@include screen-sm() {
 			max-width: none;
 			margin: 0;
+		}
+	}
+
+	&__header {
+		padding-bottom: 45px;
+
+		@include screen-sm() {
+			padding: 0 15px 15px;
+		}
+
+		@include screen-md() {
+			padding: 0 35px 15px;
 		}
 	}
 
@@ -61,14 +70,14 @@
 		&:focus {
 
 			&::before {
-				background: url($path + 'img/icons.png') no-repeat -19px -46px;
+				background-position: -19px -46px;
 			}
 		}
 
 		&::before {
 			content: '';
 			position: absolute;
-			background: url($path + 'img/cross-bright.png') no-repeat;
+			background: url($path + 'img/icons.png') no-repeat -36px -46px;
 			width: 17px;
 			height: 17px;
 			top: 50%;
@@ -79,72 +88,16 @@
 
 	&__title {
 		font-weight: 300;
-		color: $color-lightgray;
-		font-family: $font-main-cond;
-		margin: 0 0 .2em;
-		font-size: 5rem;
-		text-align: center;
+		color: $color-second;
+		margin: 0 0 .5em;
+		font-size: 3rem;
 
 		@include screen-sm() {
-			font-size: 7rem;
+			font-size: 4.8rem;
 		}
 	}
 
 	&__desc {
 		margin-bottom: 4em;
-		color: $color-lightgray;
-		text-align: center;
-	}
-
-	&__link-wrap {
-		position: absolute;
-		left: 15px;
-		right: 15px;
-		bottom: 20px;
-		text-align: center;
-
-		@include screen-xs() {
-			left: 30px;
-			right: 30px;
-		}
-
-		@include screen-sm() {
-			text-align: right;
-		}
-
-		@include screen-md() {
-			left: 50px;
-			right: 50px;
-		}
-	}
-
-	&__link {
-		color: $color-lighter;
-		font-family: $font-main-cond;
-		font-size: 1.8rem;
-		margin-bottom: 10px;
-
-		@include screen-xs() {
-			display: inline-block;
-			margin-bottom: 0;
-			margin-right: 30px;
-		}
-
-		&:last-child {
-
-			@include screen-xs() {
-				margin-right: 0;
-			}
-		}
-
-		a {
-			color: $color-lighter;
-
-			&:hover,
-			&:focus {
-				text-decoration: none;
-				border-bottom: 1px solid $color-lighter;
-			}
-		}
 	}
 }
