@@ -10,6 +10,11 @@
 			"title": "Contact",
 			"mainClass": "banner_contact",
 			"wrapClass": "banner__wrap_space"
+		},
+		{
+			"smTitle": "Превозносим женственность. Ценим комфорт.",
+			"mainClass": "banner_img_2",
+			"wrapClass": "banner__wrap_space"
 		}
 	]
 }

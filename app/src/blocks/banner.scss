@@ -1,9 +1,9 @@
 .banner {
 	background: no-repeat 50% 50%;
 	background-size: cover;
-	padding: 15em 0 1em;
 	display: block;
 	color: $color-black;
+	padding: 1em 0;
 
 	&:hover,
 	&:focus {
@@ -38,9 +38,11 @@
 		text-transform: uppercase;
 		font-size: 5rem;
 		text-shadow: 1px 1px 1px white;
+		padding-top: 5em;
 
 		@include screen-sm() {
 			font-size: 16rem;
+			padding-top: 0;
 		}
 
 		@include screen-md() {
@@ -49,6 +51,20 @@
 
 		@include screen-lg() {
 			font-size: 20rem;
+		}
+	}
+
+	&__sm-title {
+		margin: 0;
+		padding: 4em 0;
+		color: $color-lightgray;
+		text-align: center;
+		font-family: $font-main-cond;
+		font-size: 3rem;
+		font-weight: 300;
+
+		@include screen-sm() {
+			font-size: 5rem;
 		}
 	}
 
@@ -97,6 +113,17 @@
 
 		@include screen-sm() {
 			padding: 12em 0;
+		}
+	}
+
+	&_img_2 {
+		background-image: url($path + 'img/banner-2.jpg');
+		background-position: 75% 10%;
+		background-size: auto 150%;
+
+		@include screen-xs() {
+			background-position: 50% 10%;
+			background-size: cover;
 		}
 	}
 }
