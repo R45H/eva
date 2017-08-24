@@ -59,6 +59,10 @@
 		font-size: 3.4rem;
 		margin: 0 0 .3em;
 		color: $color-black;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 	&__desc {

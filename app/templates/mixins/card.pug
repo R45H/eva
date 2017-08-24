@@ -2,5 +2,7 @@ mixin card(data)
 	a.card(href= data.link class= attributes.class)
 		.card__img(style='background-image: url(img/' + data.img + ')')
 		.card__i
-			h4.card__title= data.title
+			h4.card__title
+				span.card__underlined= data.title
 			p.card__price= data.price + ' руб.'
+			span.button.section__card-btn(href='#') add to cart

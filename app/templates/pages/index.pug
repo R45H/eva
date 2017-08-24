@@ -1,3 +1,5 @@
+//-TODO После смены порядка секций мобильное меню слетело вниз
+
 include ../mixins/cat
 include ../mixins/links
 include ../mixins/insta
@@ -7,17 +9,15 @@ include ../mixins/video
 .section
 	.container-fluid
 		+links(menu)(class='section__links')
-
-	h1.hidden-title Lovely Eva
-	+banner(banner, 2)
-	//+video('dKIRh-B55yw')
-
-.section
-	.container-fluid
 		h3.title.title_big.title_space Categories
 		.section__cat-wrap
 			each val in cat
 				+cat(val)(class='section__cat')
+
+.section
+	h1.hidden-title Lovely Eva
+	+banner(banner, 2)
+	//+video('dKIRh-B55yw')
 
 .section
 	.container
