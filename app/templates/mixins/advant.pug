@@ -1,0 +1,6 @@
+mixin advant(data)
+	.advant(class= attributes.class)
+		.advant__icon(style="background-image: url(" + data.icon + ");")
+		.advant__wrap
+			h3.title.advant__title= data.title
+			p.advant__desc= data.desc

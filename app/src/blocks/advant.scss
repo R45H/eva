@@ -1,0 +1,25 @@
+.advant {
+	display: flex;
+
+	&__icon {
+		width: 2.5em;
+		background: no-repeat top / contain;
+		flex: none;
+		margin-right: 1.5em;
+	}
+
+	&__wrap {
+		text-align: left;
+	}
+
+	&__title {
+		text-align: left;
+		margin-top: 0;
+		margin-bottom: 10px;
+		line-height: 1.4;
+	}
+
+	&__desc {
+
+	}
+}

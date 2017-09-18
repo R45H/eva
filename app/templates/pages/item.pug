@@ -2,6 +2,7 @@ include ../mixins/card
 include ../mixins/tab-size
 include ../mixins/tab-color
 include ../mixins/tab-shorts
+include ../mixins/advant
 
 .section
 	.item
@@ -19,19 +20,29 @@ include ../mixins/tab-shorts
 
 		.item__col.item__col_2
 			.item__wrap
+
 				.item__i
-					h1.title Lace-trim Satin Robe
+					h1.title.title_big Lace-trim Satin Robe
 					p.item__price 150 руб.
+
 				.item__i.item__desc
 					p No closure 34½" from shoulder; hits above knee Allover satin with lace trim at sleeves and hem Imported polyester/nylon
 					p No closure 34½" from shoulder; hits above knee Allover satin with lace trim at sleeves and hem Imported polyester/nylon
+
+				.item__i.item__advant-wrap
+
+					each val in advant
+						+advant(val)(class='item__advant')
+
 				.item__i
 					+tab-shorts()
 
 		.item__col.item__col_3
 			.item__wrap
+
 				.item__i
 					+tab-color()
+
 				.item__i
 					+tab-size()
 
