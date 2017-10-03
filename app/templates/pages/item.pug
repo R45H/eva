@@ -34,9 +34,6 @@ include ../mixins/advant
 					each val in advant
 						+advant(val)(class='item__advant')
 
-				.item__i
-					+tab-shorts()
-
 		.item__col.item__col_3
 			.item__wrap
 
@@ -46,12 +43,18 @@ include ../mixins/advant
 				.item__i
 					+tab-size()
 
-				a.button.button_wide.item__btn(href='#') add to cart
-				a#iBtn.btn-white.btn-white_wide.item__white-btn(href='#')
-					span.btn-white__text Item overview
-				p.item__sm-desc Orders are shipped within 24 hours
-					br
-					| Shipping is by courier company
+				.item__i
+					a.button.button_wide.item__btn(href='#') add to cart
+					a#iBtn.btn-white.btn-white_wide.item__white-btn(href='#')
+						span.btn-white__text Item overview
+
+				.item__i
+					+tab-shorts()
+
+				.item__i
+					p.item__sm-desc Orders are shipped within 24 hours
+						br
+						| Shipping is by courier company
 
 .section
 	.container
