@@ -88,6 +88,15 @@
 		@include screen-sm(max) {
 			margin-bottom: 10px;
 		}
+
+		@include screen-xs(max) {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			z-index: 2;
+			margin-bottom: 0;
+		}
 	}
 
 	&__white-btn {
