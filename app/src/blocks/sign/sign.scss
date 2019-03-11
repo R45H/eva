@@ -1,5 +1,10 @@
 .sign {
 
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
 	&__wrap {
 		position: relative;
 		background: white;
@@ -110,6 +115,34 @@
 
 		@include screen-sm() {
 			margin-bottom: 0;
+		}
+	}
+
+	&__btn {
+		margin-top: 15px;
+
+		@include screen-sm() {
+			font-size: 29px;
+		}
+	}
+
+	&_without-head {
+
+		.sign {
+			// =====
+
+			&__wrap {
+				width: 680px;
+				max-width: 100%;
+			}
+
+			&__header {
+				padding: 0;
+			}
+
+			&__body {
+				padding-top: 0;
+			}
 		}
 	}
 }
